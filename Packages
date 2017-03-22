@@ -167,6 +167,50 @@ Description: NVIDIA binary EGL library
  This package contains the driver specific binary EGL implementation provided
  by NVIDIA that is accessed via GLVND.
 
+Package: libegl1
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 97
+Depends: libc6 (>= 2.14), libglvnd0, libegl-mesa0 | libegl-vendor
+Breaks: libglvnd0 (<< 0.2.999+git20170201-1)
+Replaces: libglvnd0 (<< 0.2.999+git20170201-1)
+Filename: ./libegl1_0.2.999+git20170201-2_amd64.deb
+Size: 31302
+MD5sum: c24ef22a7e0dc2e8ca2022467f9feb42
+SHA1: 205b432d7576dd86481e4ef99094cf0a3e5dc3e5
+SHA256: 93659f673b42b3bb73739fc1c887a8adcc26fb91577b78f290c4995fc3d0b96b
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- EGL support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains support for EGL.
+
+Package: libegl1-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 122
+Depends: libegl1 (= 0.2.999+git20170201-2)
+Filename: ./libegl1-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 98424
+MD5sum: e3b99388e6d1a89fe81b3a541a8cfbf9
+SHA1: 017ce5a1e7cc7f6a5e7fdc0e780b7a6c0e088351
+SHA256: a6b74826324bbe31e4c66536db93041a3f4bd095c4d31be40f75a0d8855383e8
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libegl1
+Build-Ids: d79fa19a295ae5d1127e9e8074121695539453ae
+
 Package: libegl1-glvnd-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -262,6 +306,50 @@ Description: NVIDIA binary EGL library (non-GLVND variant)
  .
  This package contains the driver specific binary EGL implementation by NVIDIA
  as a non-GLVND alternative.
+
+Package: libgl1
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 665
+Depends: libc6 (>= 2.14), libglvnd0, libglx0 (= 0.2.999+git20170201-2)
+Breaks: libglvnd0 (<< 0.2.999+git20170201-1)
+Replaces: libglvnd0 (<< 0.2.999+git20170201-1)
+Filename: ./libgl1_0.2.999+git20170201-2_amd64.deb
+Size: 88820
+MD5sum: c5585a84ef60bb971065357981b7fd32
+SHA1: 9dc65944ccb428d83a846e0a0d7fb20dd4a5b3d2
+SHA256: 5030fe2378e150717ebf246f0bb665f42ab7440c982953de291203881fc54d24
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- legacy GL support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains support for old libGL for compatibility reasons.
+
+Package: libgl1-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 219
+Depends: libgl1 (= 0.2.999+git20170201-2)
+Filename: ./libgl1-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 76706
+MD5sum: 8f8442ecd64229b24c0ddb90760fb266
+SHA1: 8d8aa0867f6bbe3cde49e7a424c59d8620987e72
+SHA256: 28b8654f1b63a71fe30480c2196a36a34ea0da6fa47a2ca53217bc1c2cc4875e
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libgl1
+Build-Ids: 4a9efab4775c7fdc6d580d299794229c381ee455
 
 Package: libgl1-glvnd-nvidia-glx
 Source: nvidia-graphics-drivers
@@ -735,6 +823,48 @@ Description: NVIDIA binary OpenGL|ES 1.x library (transitional)
  This is a transitional package to aid switching to the GLVND based
  implementation.
 
+Package: libgles2
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 80
+Depends: libc6 (>= 2.14), libglvnd0
+Filename: ./libgles2_0.2.999+git20170201-2_amd64.deb
+Size: 14466
+MD5sum: dd5dafa6e2b0b98511ba03edaf52b734
+SHA1: 46d2458c756e241ddfa156de473803a6ec480cee
+SHA256: 38dd42a08f84eed36816fe65071e8da5d5f6d6689a9b8f8ab822e446aad6130a
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- GLES support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains support for GLES.
+
+Package: libgles2-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 42
+Depends: libgles2 (= 0.2.999+git20170201-2)
+Filename: ./libgles2-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 19358
+MD5sum: c45ff5b876e93a7ac5c0dfd1b9667bbe
+SHA1: efd9be00472bfa3e7326b5b7ab631e499c3f086c
+SHA256: 9dcb16accdeb370d3c0579140141744bfdc519dbde1e290dc586d5849495e62d
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libgles2
+Build-Ids: 3a45d4ea361ebbc7ed15ef3df2ba05ef9baf6612
+
 Package: libgles2-glvnd-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -861,6 +991,233 @@ Description: NVIDIA binary OpenGL|ES 2.x library (transitional)
  This is a transitional package to aid switching to the GLVND based
  implementation.
 
+Package: libglu1-mesa
+Source: libglu
+Version: 9.0.0-2.1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 459
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libgl1-mesa-glx | libgl1, libstdc++6 (>= 5)
+Conflicts: libglu1, mesag3 (<< 5.0.0-1), xlibmesa3
+Replaces: libglu1
+Provides: libglu1
+Filename: ./libglu1-mesa_9.0.0-2.1_amd64.deb
+Size: 166976
+MD5sum: 3dceb3bc7fbf2db0a5ef9e475316af64
+SHA1: 412e4a5f33df866fb986401ed98082fe08e055d1
+SHA256: 0c3617fefedef66964e920019dd1a38e24b42d347de759efa85c44b57d799651
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Mesa OpenGL utility library (GLU)
+ GLU offers simple interfaces for building mipmaps; checking for the
+ presence of extensions in the OpenGL (or other libraries which follow
+ the same conventions for advertising extensions); drawing
+ piecewise-linear curves, NURBS, quadrics and other primitives
+ (including, but not limited to, teapots); tesselating surfaces; setting
+ up projection matrices and unprojecting screen coordinates to world
+ coordinates.
+ .
+ On Linux, this library is also known as libGLU or libGLU.so.1.
+ .
+ This package provides the SGI implementation of GLU provided by the
+ Mesa project (ergo the "-mesa" suffix).
+
+Package: libglu1-mesa-dbgsym
+Source: libglu
+Version: 9.0.0-2.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 651
+Depends: libglu1-mesa (= 9.0.0-2.1)
+Filename: ./libglu1-mesa-dbgsym_9.0.0-2.1_amd64.deb
+Size: 643700
+MD5sum: 2f4a38752bf4bdd43a92e58e6f6c5a07
+SHA1: 58aae9280b53579646ddace541d5aae23b66d724
+SHA256: c6472ad53efda5387aa1c3afab8bec73f44ab61200f26f0488f3b4c7ea117152
+Section: debug
+Priority: extra
+Multi-Arch: same
+Description: Debug symbols for libglu1-mesa
+Build-Ids: 7fc3d47a0f7671069b494e8d80922dc9a5cf7004
+
+Package: libglu1-mesa-dev
+Source: libglu
+Version: 9.0.0-2.1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 925
+Depends: libglu1-mesa (= 9.0.0-2.1), libgl1-mesa-dev | libgl-dev
+Conflicts: mesa-glide2-dev (<< 5.0.0-1), mesag-dev (<< 5.0.0-1), mesag3+ggi-dev (<< 5.0.0-1), xlibmesa-dev
+Replaces: libglu-dev
+Provides: libglu-dev, xlibmesa-glu-dev
+Filename: ./libglu1-mesa-dev_9.0.0-2.1_amd64.deb
+Size: 204020
+MD5sum: ee31558cdde20dcb212939f0a3986334
+SHA1: 0406a029b40aeb785df948285d77582c767976bf
+SHA256: 8733c1e8db73af708626839057e4ca78e6d0e70bb01a58d789a56739a09304ea
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Description: Mesa OpenGL utility library -- development files
+ Includes headers and static libraries for compiling programs with GLU.
+ .
+ For a complete description of GLU, please look at the libglu1-mesa
+ package.
+
+Package: libglvnd-core-dev
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 56
+Breaks: libglvnd-dev (<< 0.2.999+git20170201-1)
+Replaces: libglvnd-dev (<< 0.2.999+git20170201-1)
+Filename: ./libglvnd-core-dev_0.2.999+git20170201-2_amd64.deb
+Size: 10826
+MD5sum: 1043fbe414d0542b9379e542ad5b1ccc
+SHA1: 5cb0ab1da0d2013c0e5bab24a480d470c6e2f74d
+SHA256: dcd50500d5736d835fc383d29ecabe4cc48b9c36879de42ad62e4012657e2dc6
+Section: libdevel
+Priority: extra
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- core development files
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the header files for libglvnd split in a separate
+ package for Mesa.
+
+Package: libglvnd-dev
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 18
+Depends: libglvnd0 (= 0.2.999+git20170201-2), libglvnd-core-dev (= 0.2.999+git20170201-2), libegl1 (= 0.2.999+git20170201-2), libgles2 (= 0.2.999+git20170201-2), libgl1 (= 0.2.999+git20170201-2), libglx0 (= 0.2.999+git20170201-2), libopengl0 (= 0.2.999+git20170201-2)
+Filename: ./libglvnd-dev_0.2.999+git20170201-2_amd64.deb
+Size: 2994
+MD5sum: 496505d73854f370865da59fc400b7e5
+SHA1: f4ffc1eb960d2658ab55fdb39ad1c8d1d1830485
+SHA256: 594271e766774d7def2438563bb0ebad90ea1ddfa9be6aea9407e2bd9fc401bf
+Section: libdevel
+Priority: extra
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- development files
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the development files for libglvnd.
+
+Package: libglvnd0
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 618
+Depends: libc6 (>= 2.14)
+Filename: ./libglvnd0_0.2.999+git20170201-2_amd64.deb
+Size: 47900
+MD5sum: 2fb8a1769b8a121e4cf09b90d05d455a
+SHA1: 1ebad0e294abdba2c80446e94be4204727dcf9da
+SHA256: 1aa7e5fc6f147e806bc444796040ed1368a036567fa2a5f305b8e61ef237abe9
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the GL dispatch library.
+
+Package: libglvnd0-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 199
+Depends: libglvnd0 (= 0.2.999+git20170201-2)
+Filename: ./libglvnd0-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 65314
+MD5sum: c461c725ee27bb7200a70d7ffdd7dafe
+SHA1: ccf8a420602c398891cfe37ae254f4ae12e0662f
+SHA256: bd2efa9b439bc8a9f863d861df961108bbeb2b50ae7683013171b2205363feef
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libglvnd0
+Build-Ids: 7acaef9e3d280d8e69adcdfad5b18062b97fb5db
+
+Package: libglw1-mesa
+Source: glw
+Version: 8.0.0-1.1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 46
+Depends: libc6 (>= 2.4), libgl1-mesa-glx | libgl1, libx11-6, libxm4 (>= 2.3.4), libxt6
+Provides: libglw1
+Filename: ./libglw1-mesa_8.0.0-1.1_amd64.deb
+Size: 9880
+MD5sum: bcad4442acd0fa6af58da8357767c250
+SHA1: d090d5b854bfc0b4ecc6d47974445fa4d652e97d
+SHA256: 320dc968d6dd41917ded6ab7eecd58e5ee8045e8a0be12bcbea6d0769c6fd135
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://mesa3d.sourceforge.net/
+Description: GL widget library for Athena and Motif -- runtime
+ This package provides a simple widgets library, libGLw, which
+ allows Motif-based applications to embed an OpenGL drawing context.
+
+Package: libglw1-mesa-dbgsym
+Source: glw
+Version: 8.0.0-1.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 40
+Depends: libglw1-mesa (= 8.0.0-1.1)
+Filename: ./libglw1-mesa-dbgsym_8.0.0-1.1_amd64.deb
+Size: 24810
+MD5sum: 30be0de09cb9dc8035c71160012333d6
+SHA1: a32b5fa06ecdc95efbb7f849a11d792867a86533
+SHA256: 8cca5a52f55c85e726b5679a305a865e2f18955c5b223f84cd320efc504d9859
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://mesa3d.sourceforge.net/
+Description: Debug symbols for libglw1-mesa
+Build-Ids: c10d310effd74010879557681de40cbab2c9e34d
+
+Package: libglw1-mesa-dev
+Source: glw
+Version: 8.0.0-1.1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 59
+Depends: libglw1-mesa (= 8.0.0-1.1), libx11-dev, libxt-dev, libmotif-dev | lesstif2-dev, mesa-common-dev
+Conflicts: libgl1-mesa-swx11-dev (<< 6.5.2-4), libglw-dev
+Replaces: libglw-dev
+Provides: libglw-dev, mesag-widgets-dev, mesag3-widgets
+Filename: ./libglw1-mesa-dev_8.0.0-1.1_amd64.deb
+Size: 10692
+MD5sum: a8395837cda5188b5618f3e5b25e934d
+SHA1: c82cc5d28f2371a064d1cf853ef510e738e9b9e6
+SHA256: 59e6439d22eeaf7cc2cf782704f447c86ea2fdfca413bff1829c842a6d7a2ed5
+Section: libdevel
+Priority: optional
+Homepage: http://mesa3d.sourceforge.net/
+Description: GL widget library for Athena and Motif -- development files
+ This package provides the development environment required for
+ compiling programs with the Mesa widgets library, libGLw, which
+ allows Motif-based applications to embed an OpenGL drawing context.
+ The headers and static libraries for compiling programs that use this
+ library are included.
+
 Package: libglx-nvidia0
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -914,6 +1271,50 @@ Description: NVIDIA binary GLX library
  .
  This package contains the driver specific binary GLX implementation by NVIDIA
  that is accessed via GLVND.
+
+Package: libglx0
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 84
+Depends: libc6 (>= 2.14), libglvnd0, libx11-6 (>= 2:1.4.99.1), libxext6, libglx-mesa0 | libglx-vendor
+Breaks: libglvnd0 (<< 0.2.999+git20170201-1)
+Replaces: libglvnd0 (<< 0.2.999+git20170201-1)
+Filename: ./libglx0_0.2.999+git20170201-2_amd64.deb
+Size: 27410
+MD5sum: da17fa11d4ef55d2db027e0142672636
+SHA1: 0451d5f705a7a931e8f5e1b7c283adc1f8c8cdd6
+SHA256: 7b5b0007a581f154c69232f9a983cf419f9a62c2059c88c6954eee591225c02e
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- GLX support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains support for GLX.
+
+Package: libglx0-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 130
+Depends: libglx0 (= 0.2.999+git20170201-2)
+Filename: ./libglx0-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 110504
+MD5sum: 03b22fad08adb26e440b731e0ab20950
+SHA1: bdfdf1edad579e5387c1a62266850176c0d90449
+SHA256: cc50792bfcb17086d35156aabd061b56e56cdcfa5b19f8b37a5f2c709cffcfd9
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libglx0
+Build-Ids: 4a1639e865d083f37045176a8c127466596866a2
 
 Package: libglx0-glvnd-nvidia
 Source: nvidia-graphics-drivers
@@ -1631,6 +2032,50 @@ Description: NVIDIA PTX JIT Compiler
  general purpose computation.
  .
  This package contains the runtime PTX JIT compiler library.
+
+Package: libopengl0
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 225
+Depends: libc6 (>= 2.14), libglvnd0
+Breaks: libglvnd0 (<< 0.2.999+git20170201-1)
+Replaces: libglvnd0 (<< 0.2.999+git20170201-1)
+Filename: ./libopengl0_0.2.999+git20170201-2_amd64.deb
+Size: 31752
+MD5sum: 248e21137ba743f8e981255643ce3293
+SHA1: 408d5267a6837826a2145414c84de33ad777f1b3
+SHA256: f075b135fc30018de1d831eb0c0fc422609a482fcdd09298380dc964cd93d12b
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Vendor neutral GL dispatch library -- OpenGL support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains support for OpenGL.
+
+Package: libopengl0-dbgsym
+Source: libglvnd
+Version: 0.2.999+git20170201-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 75
+Depends: libopengl0 (= 0.2.999+git20170201-2)
+Filename: ./libopengl0-dbgsym_0.2.999+git20170201-2_amd64.deb
+Size: 25070
+MD5sum: e8bdcdf5676364950b22483a2c2706c4
+SHA1: adbfac4412f164247c8b53065722a7abec8443f8
+SHA256: b1c207216f1db7ded2061718f0c1c596a27428b520a0c070c0fdab04c6beed58
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: https://github.com/NVIDIA/libglvnd
+Description: Debug symbols for libopengl0
+Build-Ids: 662cd8214fad13b22fca4ba62ef76789da2c1249
 
 Package: libopengl0-glvnd-nvidia
 Source: nvidia-graphics-drivers
