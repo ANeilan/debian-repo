@@ -4292,6 +4292,260 @@ Description: X11 authorisation library (debug package)
  git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
 Build-Ids: 21e161bda06ddd83b0acbe9a20eecc02ca3869f9
 
+Package: libxres-dev
+Source: libxres
+Version: 2:1.0.7-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 43
+Depends: libxres1 (= 2:1.0.7-2), libx11-dev, libxext-dev, x11proto-resource-dev
+Conflicts: x11proto-resource-dev (<< 1.0+cvs.20050712-1)
+Filename: ./libxres-dev_1.0.7-2_amd64.deb
+Size: 16878
+MD5sum: fb28f3cad8f4bb5dd7d9bdb2a5b42e20
+SHA1: 7832c9f0eecd9f0d21bcd6a3c064a66f0709a1c2
+SHA256: 78b4719ed82a6c7b086b320f3c882859f867effcab90899a08eacb5d975d3b81
+Section: libdevel
+Priority: optional
+Description: X11 Resource extension library (development headers)
+ libXRes provides an X Window System client interface to the Resource
+ extension to the X protocol.
+ .
+ The Resource extension allows for X clients to see and monitor the X resource
+ usage of various clients (pixmaps, et al).
+ .
+ This package contains the development headers for the library found in
+ libxres1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXRes
+
+Package: libxres1
+Source: libxres
+Version: 2:1.0.7-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 35
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6
+Filename: ./libxres1_1.0.7-2_amd64.deb
+Size: 15056
+MD5sum: 2042eae9379e73670fda79356ff21945
+SHA1: e77b49259d2e60472ffcf2fbe9cf19a408109ad7
+SHA256: 17bae309e0a9f4fa1199336619cb05cfbf2c1aeb11c849cd5f0839361a1742e1
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: X11 Resource extension library
+ libXRes provides an X Window System client interface to the Resource
+ extension to the X protocol.
+ .
+ The Resource extension allows for X clients to see and monitor the X resource
+ usage of various clients (pixmaps, et al).
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXRes
+
+Package: libxres1-dbg
+Source: libxres
+Version: 2:1.0.7-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 65
+Depends: libxres1 (= 2:1.0.7-2)
+Filename: ./libxres1-dbg_1.0.7-2_amd64.deb
+Size: 26454
+MD5sum: e32f87214220a3fdb369f6380ee33219
+SHA1: dca650de854cf5a97daadc9e9a33b12c93bdd5fa
+SHA256: 704338b804772a2df1c98d0603446edf2c7b508c7c7cc1a9af05ed45ca189855
+Section: debug
+Priority: extra
+Multi-Arch: same
+Description: X11 Resource extension library (debug package)
+ libXRes provides an X Window System client interface to the Resource
+ extension to the X protocol.
+ .
+ The Resource extension allows for X clients to see and monitor the X resource
+ usage of various clients (pixmaps, et al).
+ .
+ This package contains the debug versions of the library found in libxres1.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXRes
+
+Package: libxv-dev
+Source: libxv
+Version: 2:1.0.11-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 102
+Depends: libxv1 (= 2:1.0.11-2), libx11-dev, libxext-dev, x11proto-video-dev
+Filename: ./libxv-dev_1.0.11-2_amd64.deb
+Size: 48174
+MD5sum: b4c17934285d8b3dcf07c51eef1497c9
+SHA1: f630dcd0ddfd6620b35975b484ecffa9b4809569
+SHA256: b8626ef7d1049a5b7d4d60651f280fbd848cf0d1627e00f30c7ef3485172394c
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Description: X11 Video extension library (development headers)
+ libXv provides an X Window System client interface to the XVideo
+ extension to the X protocol.
+ .
+ The XVideo extension allows for accelerated drawing of videos.  Hardware
+ adaptors are exposed to clients, which may draw in a number of colourspaces,
+ including YUV.
+ .
+ This package contains the development headers for the library found in
+ libxv1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXv
+
+Package: libxv1
+Source: libxv
+Version: 2:1.0.11-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 49
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6
+Filename: ./libxv1_1.0.11-2_amd64.deb
+Size: 24638
+MD5sum: 07cad1b032f5aaa32bc19821e9a9fd1f
+SHA1: 83e6f3e283d4e13fc8533a85e1d9c45f9d851723
+SHA256: bb1b533ea30a739cc547284b9cdcf915e261ca1e64e9a71e47739ac78a4a0dd6
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: X11 Video extension library
+ libXv provides an X Window System client interface to the XVideo
+ extension to the X protocol.
+ .
+ The XVideo extension allows for accelerated drawing of videos.  Hardware
+ adaptors are exposed to clients, which may draw in a number of colourspaces,
+ including YUV.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXv
+
+Package: libxv1-dbgsym
+Source: libxv
+Version: 2:1.0.11-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: libxv1 (= 2:1.0.11-2)
+Filename: ./libxv1-dbgsym_1.0.11-2_amd64.deb
+Size: 30864
+MD5sum: 5ea3b0a28e1a6f928a41dd237d56d0c4
+SHA1: 050729271a962f7a5dd2f06cc35d622beca5b079
+SHA256: 533c71a41556daf8a91d13a84bdd21850e5e2361f7cc8cebbd35df4667240bc0
+Section: debug
+Priority: extra
+Multi-Arch: same
+Description: Debug symbols for libxv1
+Build-Ids: 28fc9823314d9cca1866d0adb868c8d2bea9f247
+
+Package: libxvmc-dev
+Source: libxvmc
+Version: 2:1.0.10-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 90
+Depends: libxvmc1 (= 2:1.0.10-2), libx11-dev (>= 2:1.0.0-1), libxext-dev (>= 1:1.0.0-2), x11proto-video-dev, libxv-dev
+Conflicts: x11proto-video-dev (<< 2.2+cvs.20050712-1)
+Replaces: x11proto-video-dev (<< 2.2+cvs.20050712-1)
+Filename: ./libxvmc-dev_1.0.10-2_amd64.deb
+Size: 34516
+MD5sum: 1dbb48b4f218f5f08378837a73fb32df
+SHA1: a0c5a12f1644743852b4ca4b32e24fcc2eae80ed
+SHA256: 86a785724b8ed4cd17d02df601202065b9a5334a2efbbd12e7b66be266da777f
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Description: X11 Video extension library (development headers)
+ libXvMC provides an X Window System client interface to the
+ XVideo-MotionCompensation extension to the X protocol.
+ .
+ The XVideo-MotionCompensation extension allows for further accelerated drawing
+ of videos.  Video data may be sent at earlier stages of the decoding pipeline
+ than raw YUV data.  At the moment, driver support for XvMC is poor to
+ non-existent.
+ .
+ This package contains the development headers for the library found in
+ libxvmc1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXvMC
+
+Package: libxvmc1
+Source: libxvmc
+Version: 2:1.0.10-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 66
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6, libxv1, x11-common
+Filename: ./libxvmc1_1.0.10-2_amd64.deb
+Size: 25144
+MD5sum: 7ff94395a8c70ceb3e2cd4d0ac68ef88
+SHA1: 8fe2740f112814e8883955f0daf9525d1bd93191
+SHA256: db83289e11e0f72b44a4094b205199569dab3911b65a7d165f7ff3ed8e81cbee
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: X11 Video extension library
+ libXvMC provides an X Window System client interface to the
+ XVideo-MotionCompensation extension to the X protocol.
+ .
+ The XVideo-MotionCompensation extension allows for further accelerated drawing
+ of videos.  Video data may be sent at earlier stages of the decoding pipeline
+ than raw YUV data.  At the moment, driver support for XvMC is poor to
+ non-existent.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXvMC
+
+Package: libxvmc1-dbgsym
+Source: libxvmc
+Version: 2:1.0.10-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 62
+Depends: libxvmc1 (= 2:1.0.10-2)
+Filename: ./libxvmc1-dbgsym_1.0.10-2_amd64.deb
+Size: 39732
+MD5sum: eee489f97e894b366d7b7bce39a433cd
+SHA1: 2296a27aaea98000055b1d3a39eadf8761441aa5
+SHA256: fe5de4d09b1d48fe817b4475cc4ef9c67b89d893519a8a6bc1588574387c5f22
+Section: debug
+Priority: extra
+Multi-Arch: same
+Description: Debug symbols for libxvmc1
+Build-Ids: 0864a5039e6b6b338d6c69f22756392000aaad0b 1b7a099a1dfb33c4e16f865b666029ad267b94e5
+
 Package: nvidia-alternative
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -5505,6 +5759,745 @@ Description: Secure Sockets Layer toolkit - cryptographic utility
   * encrypting and decrypting with ciphers;
   * testing SSL/TLS clients and servers;
   * handling S/MIME signed or encrypted mail.
+
+Package: x11-apps
+Version: 7.7+7
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2329
+Depends: libc6 (>= 2.14), libpng16-16 (>= 1.6.2-1), libsm6, libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxft2 (>> 2.1.1), libxkbfile1, libxmu6, libxmuu1, libxrender1, libxt6 (>= 1:1.1.0), man-db
+Recommends: xbitmaps
+Suggests: mesa-utils
+Conflicts: bitmap, oclock, transset, x11perf, xbiff, xcalc, xclipboard, xclock, xconsole, xcursorgen, xditview, xeyes, xgc, xload, xlogo, xmag, xman, xmore, xwd, xwud
+Replaces: bitmap, oclock, transset, x11perf, xbase-clients (<= 1:7.2.ds2-3), xbiff, xcalc, xclipboard, xclock, xconsole, xcursorgen, xditview, xeyes, xgc, xload, xlogo, xmag, xman, xmore, xwd, xwud
+Filename: ./x11-apps_7.7+7_amd64.deb
+Size: 659852
+MD5sum: d995223bd5bf2aac98c2c7810f034c0a
+SHA1: 01868ebec249c2a1bf55dba4c07b97c59d62ca63
+SHA256: dc572d65c96b8df84194b868794bd79a065700e067e7bbe9d6fe82ddc47b0f36
+Section: x11
+Priority: optional
+Description: X applications
+ This package provides a miscellaneous assortment of X applications
+ that ship with the X Window System, including:
+  - atobm, bitmap, and bmtoa, tools for manipulating bitmap images;
+  - ico, a demo program animating polyhedrons;
+  - oclock and xclock, graphical clocks;
+  - rendercheck, a program to test render extension implementations;
+  - transset, a tool to set opacity property on a window;
+  - xbiff, a tool which tells you when you have new email;
+  - xcalc, a scientific calculator desktop accessory;
+  - xclipboard, a tool to manage cut-and-pasted text selections;
+  - xconsole, which monitors system console messages;
+  - xcursorgen, a tool for creating X cursor files from PNGs;
+  - xditview, a viewer for ditroff output;
+  - xedit, a simple text editor for X;
+  - xeyes, a demo program in which a pair of eyes track the pointer;
+  - xgc, a graphics demo;
+  - xload, a monitor for the system load average;
+  - xlogo, a demo program that displays the X logo;
+  - xmag, which magnifies parts of the X screen;
+  - xman, a manual page browser;
+  - xmore, a text pager;
+  - xwd, a utility for taking window dumps ("screenshots") of the X session;
+  - xwud, a viewer for window dumps created by xwd;
+  - Xmark, x11perf, and x11perfcomp, tools for benchmarking graphical
+    operations under the X Window System;
+ .
+ The xbiff, xcalc, xconsole, xedit and xman programs use bitmap images
+ provided by the xbitmaps package.
+
+Package: x11-apps-dbgsym
+Source: x11-apps
+Version: 7.7+7
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1866
+Depends: x11-apps (= 7.7+7)
+Filename: ./x11-apps-dbgsym_7.7+7_amd64.deb
+Size: 1553394
+MD5sum: 945d6f7cab18998bd82c542282c06e89
+SHA1: 3d6a508d7019a87f47acd775841ba726f41ce74a
+SHA256: 069606434c9bfdee9fc8aae0e2d111211f5e5ea60a6522d9e7419ae8aa8c6665
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-apps
+Build-Ids: 007dbe12d170377a37fd37dc151ff38c27384198 2058bc6d47f19b7d3b8a5a5583a4628dcdefd0b7 2c9077d9add340c10c6e83bf598f26d70e7ec77c 31abeaf7c070944160a94c2a7507c766367ec62d 3968d4157c57615ffd5cf95826880226cbf6c275 3c93a727725b24d6e74e49330e402418995c945b 3d0a508521d15c43a743c948b3b3d0775aa47b58 3e89915996026ce25c728ac7e3d1e6f6f40a98e6 4b71142790cd725088ac1760fcf5e6fb3a9ca0d9 57e88bacdf5255d68ba2d049a7c1e8f7df3c100b 69d33150e7b1e4a31438c6cac15f98a6ebdf54f7 7205455c02876a5284a90c79e10ee977401d823f 7e29d8f617986b3945138ed54ddbbbd87de58d2e 8011c0058de137f1c7d7186f35257314d96f0df2 882cf5d201ecb2aee4f30af7e1eb3181a2788134 918a668a0de6a78003ad55137c421bc1de5d6b78 a20424ad35182113a2dffadc629fd2e522994a6d b949fa97c2d866067160844b015bd615882fb640 c33127e31711a8d9aff8766c3dcc45f0204f1cb0 c3ff05565596cc67024accc611e34a59be73dab3 c496fa23e2306fddf27dc246efb28f64626a3509 dba414877831947ca365dfd680ba6fb2f3d06481 e5a49ca09fd4df7b4a63b394eb7087fd0e7ad488 e87b07da8b0fa812d9527003a46fb6b526f2f1e5 f3fb2919de75abc6ec1fcdc3145c526d13983a0c f8e7c7d50a1cc53fda151d5592ac9e0e84317463
+
+Package: x11-session-utils
+Version: 7.7+3
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 218
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libsm6, libx11-6, libxaw7, libxmuu1, libxt6 (>= 1:1.1.0), cpp
+Filename: ./x11-session-utils_7.7+3_amd64.deb
+Size: 71420
+MD5sum: 8880e0d719222f8f16ba5c192b2a6f2b
+SHA1: d998f808a575e48f2086846bfba340f18c2b0823
+SHA256: 2d57b79596211f6fb9546cc3b8127e6dd2f0e5030971db30d8201f0b476f7738
+Section: x11
+Priority: optional
+Description: X session utilities
+ This package provides the X session manager and related tools:
+  - rstart;
+  - smproxy, a session manager proxy for X clients that do not use the X
+    session manager protocol;
+  - xsm, a session manager for X sessions;
+ Installation of an rsh or ssh daemon (server) is necessary if rstartd is
+ to be used, and installation of an rsh or ssh client is necessary if
+ rstart is to be used.
+
+Package: x11-session-utils-dbgsym
+Source: x11-session-utils
+Version: 7.7+3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 190
+Depends: x11-session-utils (= 7.7+3)
+Filename: ./x11-session-utils-dbgsym_7.7+3_amd64.deb
+Size: 144282
+MD5sum: 156d40f2fb3e0fd9ed2d9cd8035e40b3
+SHA1: 24c2d5fcf2f3db4568b539873f8498e9de59885e
+SHA256: c499ae72ed0f45bf89d55cde7f63313ee427ec2cd7aea0633addfa0379746ff7
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-session-utils
+Build-Ids: 2daca5c8e893a46fd96d6cc6d2a0cfa0e492d31d 755989fa35f9257cc597326f43c4618edb09ce7b d2beef84d29176848634223952b200aef16e6d1d
+
+Package: x11-utils
+Version: 7.7+4
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 636
+Depends: libc6 (>= 2.15), libfontconfig1 (>= 2.11), libfontenc1, libfreetype6 (>= 2.2.1), libgl1-mesa-glx | libgl1, libx11-6, libx11-xcb1, libxaw7, libxcb-shape0, libxcb1 (>= 1.6), libxcomposite1 (>= 1:0.3-1), libxext6, libxft2 (>> 2.1.1), libxi6, libxinerama1, libxmu6, libxmuu1, libxrandr2 (>= 2:1.2.0), libxrender1, libxt6, libxtst6, libxv1, libxxf86dga1, libxxf86vm1
+Suggests: mesa-utils
+Filename: ./x11-utils_7.7+4_amd64.deb
+Size: 202126
+MD5sum: 691ae1f295209328c6c137f824f13a41
+SHA1: 0906966efcad935895a35ea34c3704d171a8e5fa
+SHA256: e7759352a25149df2b71185fdb24f1c37ef96cad54dfb57f378a8a2a6813ca35
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X11 utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X utilities
+ that ship with the X Window System, including:
+  - appres, editres, listres and viewres, which query the X resource database;
+  - luit, a filter that can be run between an arbitrary application and a
+    UTF-8 terminal emulator;
+  - xdpyinfo, a display information utility for X;
+  - xdriinfo, query configuration information of DRI drivers;
+  - xev, an X event displayer;
+  - xfd, a tool that displays all the glyphs in a given X font;
+  - xfontsel, a tool for browsing and selecting X fonts;
+  - xkill, a tool for terminating misbehaving X clients;
+  - xlsatoms, which lists interned atoms defined on an X server;
+  - xlsclients, which lists client applications running on an X display;
+  - xlsfonts, a server font list displayer;
+  - xmessage, a tool to display message or dialog boxes;
+  - xprop, a property displayer for X;
+  - xvinfo, an Xv extension information utility for X;
+  - xwininfo, a window information utility for X;
+ .
+ The editres and viewres programs use bitmap images provided by the
+ xbitmaps package. The luit program requires locale information from
+ the libx11-data package.
+
+Package: x11-utils-dbgsym
+Source: x11-utils
+Version: 7.7+4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 621
+Depends: x11-utils (= 7.7+4)
+Filename: ./x11-utils-dbgsym_7.7+4_amd64.deb
+Size: 453994
+MD5sum: b889fbde6bdd92e2394e126e18fcad71
+SHA1: ab58dfa89b03bba8dfa7d80ccb77cc8339ff6143
+SHA256: ea347f7ff19055d530c1f148fe2754e67f997e0c52c5963d66e8cb703dfcc0c7
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-utils
+Build-Ids: 04e61038cc8b6cafff2447d550fc8eca984ec341 21299ed4da9af7ef708c62dcf6aaf31d90238e5b 22993fd44c946f6004c4564364d6a09551ac523c 2594adbbd4303180d38b48abe47df45f541da92a 7d74ff639da03d967aaf8b9cf68fa3dae408b933 7e398d246d26bcafecb6e3de4263bad64a5d09dd 7eec816b37f3a63aaa8a1a526f629dfbd0d6f4ac 80ce3199301491f36f9a3fa5d63e23407a84f682 8cc43235e6a55e5041eb3dedffd2fe6fe646cd28 9edd164a8810a0a8fd850e35aea2fddaf165a069 a9fe6a0205555998759b93842bd1b65f6054f73a b529ce700f06e9ed7f003a35b2a294270b808aa3 c8927d8dfa9f019dd3809bb88cbc6e652257d3f4 de31fe21cbacb102a95cfe5954503ccb250bccaa e9a3b05eaa6fc014d3e85685e2a189989b722bb9 f11d2705046d51b82a24cff6c98af3f465a72b18 f4b8c76c4dbe0939d81f78708337fb435401018f f6eca3d9449dfac645b6a35f4538b9e4a7587c68
+
+Package: x11-xfs-utils
+Version: 7.7+3
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 91
+Depends: libc6 (>= 2.4), libfs6, libx11-6
+Conflicts: fslsfonts, fstobdf, showfont, xfsinfo
+Replaces: fslsfonts, fstobdf, showfont, xbase-clients (<= 1:7.2.ds2-3), xfsinfo, xutils (<= 1:7.1.ds.3-1)
+Filename: ./x11-xfs-utils_7.7+3_amd64.deb
+Size: 25520
+MD5sum: e9c04aa8e3f26551e840d8518cb5bc32
+SHA1: f1ff2c62fb15f60f357fc87ebfa119f6f4fa36e0
+SHA256: 611800a8066aec23148b53cbbd272edddb046d0e08b2be5178286499931b9a84
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X font server utilities
+ x11-xfs-utils provides a set of utility programs useful on a system that uses
+ an X font server.
+ .
+ The programs in this package include:
+  - fslsfonts, a tool that lists fonts served by an X font server;
+  - fstobdf, a tool which retrieves a font in BDF format from an X font server;
+  - showfont, a font dumper for use with an X font server;
+  - xfsinfo, an X font server information utility.
+
+Package: x11-xfs-utils-dbgsym
+Source: x11-xfs-utils
+Version: 7.7+3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 79
+Depends: x11-xfs-utils (= 7.7+3)
+Filename: ./x11-xfs-utils-dbgsym_7.7+3_amd64.deb
+Size: 42562
+MD5sum: 66eca852d270a84a71a4139bc4e5c936
+SHA1: 8b2e4a95b941d68f15352d14db799a6f2dfb131b
+SHA256: f53afbb3813974b510e9085a9595f3b6777b7e11a66aecb4dc96d986b6bb126a
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-xfs-utils
+Build-Ids: 0be94fe87951f6bd0caa0da36772b8c991065ce0 9acf47a976a961b8c6db227a4d2a3673ce276659 9eb1b73284cb14d9d7c7dc082ed38b17c4751370 f1aee6f37ebdc3bea76063a6961c3f303885fc3d
+
+Package: x11-xkb-utils
+Version: 7.7+4
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 454
+Depends: libc6 (>= 2.14), libx11-6, libxaw7, libxkbfile1, libxt6
+Replaces: xbase-clients (<= 1:7.2.ds2-3)
+Filename: ./x11-xkb-utils_7.7+4_amd64.deb
+Size: 162996
+MD5sum: 3f5fe298235bb8a3733593e585ad0643
+SHA1: 22581267efa4e89af9493b60902f3f96d9e46e2e
+SHA256: ab31c1248aa9a5680f3992778633222de52b25993e8c7d7810c924bf97dbf31e
+Section: x11
+Priority: optional
+Description: X11 XKB utilities
+ xkbutils contains a number of client-side utilities for XKB, the X11
+ keyboard extension.
+ .
+ setxkbmap is a tool to query and change the current XKB map.
+ .
+ xkbbell generates a bell event through the keyboard.
+ .
+ xkbcomp is a tool to compile XKB definitions into map files the server
+ can use.
+ .
+ xkbevd is an experimental tool to listen for certain XKB events and execute
+ defined triggers when actions occur.
+ .
+ xkbprint is a tool to generate an image with the physical representation
+ of the keyboard as XKB sees it.
+ .
+ xkbvleds shows the changing status of keyboard LEDs.
+ .
+ xkbwatch shows the changing status of modifiers and LEDs.
+
+Package: x11-xkb-utils-dbgsym
+Source: x11-xkb-utils
+Version: 7.7+4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 456
+Depends: x11-xkb-utils (= 7.7+4)
+Filename: ./x11-xkb-utils-dbgsym_7.7+4_amd64.deb
+Size: 379322
+MD5sum: 150e0f474b874c49338f61f33c1175cc
+SHA1: 36a7959bdb06c819b60c849ebd38816f8b5a5a6e
+SHA256: a7d07beaee741ec8e46c6434a550e3e2ee83b47eb319e0de44de877a3d207542
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-xkb-utils
+Build-Ids: 184bd48aad542850a64f7949e17edee50c263494 48b59bcf013d27c7a38f5f6363aa5dbfbf804e71 a66ee8ce9d1378b06d377dfb6239dff3cb01fdd6 a7aae3ac44efda6853b4d28a7bdbf5316f4fdc37 c0f327134a52ed42c12dd0aa2c1bb78ab09a0a28 d77b3d37c1bce1da868dec5d88968200c4218e94 f2d9203ebe662d58fbd25e17bf758f92c99d6f2d
+
+Package: x11-xserver-utils
+Version: 7.7+8
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 515
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.5.0), libxrender1, libxt6, libxxf86vm1, cpp
+Suggests: nickle, cairo-5c, xorg-docs-core
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Breaks: arandr (<< 0.1.9)
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Filename: ./x11-xserver-utils_7.7+8_amd64.deb
+Size: 166886
+MD5sum: 5d2c83e2411789be0e4eb751b56ac6d6
+SHA1: a769caf061d6f7189cb6060da0febcce4dff18e5
+SHA256: b5542f2b3f2b8be3be9f2da73e8611d7f01b6bdbf322cc3ce8f18580dfa17347
+Section: x11
+Priority: optional
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: x11-xserver-utils-dbgsym
+Source: x11-xserver-utils
+Version: 7.7+8
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 435
+Depends: x11-xserver-utils (= 7.7+8)
+Filename: ./x11-xserver-utils-dbgsym_7.7+8_amd64.deb
+Size: 297018
+MD5sum: eeda7c1c07f12c9792bde0357e95833e
+SHA1: 402b62d842a58e6ae1d9d20d31642c0c1b4bb4ce
+SHA256: 0068aa8b816cc0deeb1d47700def872e01002febe5592ffd3d149de59d51f56c
+Section: debug
+Priority: extra
+Description: Debug symbols for x11-xserver-utils
+Build-Ids: 0de0de0b5ffb33f144c45d16700df815196542c6 2240b3e26036eadb4abeac2d55008840badef7c7 4098bfb26849379acd175c1034372079ad9016fe 5c6d723a0c5db149a2a582bbd89ed5e0e43c2c67 7109bf74c05b065f6fc20459e1cfe261b0ef8f88 7e350977e598ccdcc364e05792b66fef6140a7b9 80b209e4293252bee1d04692b416a6d8bedd9aee 89d9460376b658a8c01e8903f159dcdf5d1ef72c 9370d6719c3e46d1199a1bd3f47c0e781155f2be 9ffa000918ed518bc1af59509092905e7b34eeef b95951709ae8579e11a3f97a14706bf7fbd111e1 d857589d8d1010b62f2b0b64c5bba832f57b71c3 d996bc696b52ba2231b4f9dfa72a8c501884ac10 e540077d89d3d960e576461fe24067b04a8b5320 e9089da3c386bfe2e86fde396fdf1a1ae0c41bb0 f75fe4b5f8a664c7b1b9e37b1d3641e4d3942588
+
+Package: x11proto-bigreqs-dev
+Source: x11proto-bigreqs
+Version: 1:1.1.2-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 42
+Filename: ./x11proto-bigreqs-dev_1.1.2-2_all.deb
+Size: 11972
+MD5sum: 5b3254086ece50b192ba2e943a464a6c
+SHA1: 475403f02785c1722be1ff04685f75bb5e024717
+SHA256: 0204d0bd9477ffee789bf99c8f7f4d5a5f2ec03df32611e46d1160f55e663b47
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X11 Big Requests extension wire protocol
+ This package provides the wire protocol for the BIG-REQUESTS extension, used to
+ send larger requests than usual in order to avoid fragmentation.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+
+Package: x11proto-composite-dev
+Source: x11proto-composite
+Version: 1:0.4.2-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 36
+Depends: x11proto-core-dev, x11proto-fixes-dev
+Filename: ./x11proto-composite-dev_0.4.2-3_all.deb
+Size: 14896
+MD5sum: 17a51f5b376f1f1056e92ab8918489dd
+SHA1: 1ba3279ef81a327dc883477f4b4910be847ed8f0
+SHA256: 8f6e222e9ce8bb86c9abba8efd5103f1497be3183a6ee3d27aeeb5a09b2244c2
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X11 Composite extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Composite extension, used to let arbitrary client programs control
+ drawing of the final image.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org compositeproto proto module.
+
+Package: x11proto-video-dev
+Source: x11proto-video
+Version: 2.3.3-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 60
+Filename: ./x11proto-video-dev_2.3.3-2_all.deb
+Size: 21640
+MD5sum: aa806ec644aa9c8b013fc5a9405abcd5
+SHA1: 226188b1a93d3253abbc9fb2405b652f7b6c1813
+SHA256: 74c9ecff294b4725e3c7d08165ade09583c7744416ef525e3e3fba410b4eafa7
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X11 Video extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XVideo and XVideoMotionCompensation extensions, used to accelerate
+ playback of videos through X.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org videoproto proto module.
+
+Package: x11proto-xext-dev
+Source: x11proto-xext
+Version: 7.3.0-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 943
+Depends: x11proto-input-dev, x11proto-core-dev
+Breaks: libxext-dev (<< 2:1.0.99), libxtst-dev (<< 2:1.0.99)
+Filename: ./x11proto-xext-dev_7.3.0-2_all.deb
+Size: 213224
+MD5sum: c3a137642a6d5ae93d0b8e9b3b3fc631
+SHA1: be223fa941dfcf55c4449325f32e68010379dd33
+SHA256: 0468ad310f89c289a4185852c55e9ccea56fd7e4f73a9ed75303f6c3b947afa7
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X11 various extension wire protocol
+ This package provides development headers describing the wire protocol
+ for various extensions, the client-side libraries of which are provided
+ in the Xext library.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xextproto proto module.
+
+Package: xauth
+Version: 1:1.0.9-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 81
+Depends: libc6 (>= 2.14), libx11-6, libxau6, libxext6, libxmuu1
+Filename: ./xauth_1.0.9-2_amd64.deb
+Size: 39378
+MD5sum: 0d99601a25f35030be14e83a7275ed15
+SHA1: fd8903c6152eaf6dabd8196d22041e8890a50e3b
+SHA256: d232e37b434c18cd1cec4cf4564f777f80ad35b69b6239955261717df44d7396
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X authentication utility
+ xauth is a small utility to read and manipulate Xauthority files, which
+ are used by servers and clients alike to control authentication and access
+ to X sessions.
+
+Package: xauth-dbgsym
+Source: xauth
+Version: 1:1.0.9-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 51
+Depends: xauth (= 1:1.0.9-2)
+Filename: ./xauth-dbgsym_1.0.9-2_amd64.deb
+Size: 34390
+MD5sum: 625bfdb601a9c065149adbf28b92658c
+SHA1: a3b5876e51019d464236fc7aa63589b76e343abd
+SHA256: 9f2c8ab0de3ad961d6862b72269884aeaf16863360b6c72bf75fc03d4b403afc
+Section: debug
+Priority: extra
+Description: Debug symbols for xauth
+Build-Ids: e301d649db12d3ad874fd69f8c47bdb208b1996b
+
+Package: xbacklight
+Version: 1.2.1-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 33
+Depends: libc6 (>= 2.3), libxcb-randr0 (>= 1.1), libxcb-util0 (>= 0.3.8), libxcb1
+Filename: ./xbacklight_1.2.1-2_amd64.deb
+Size: 11968
+MD5sum: 4ccf1e928d6271c80349cf33e7ab4df6
+SHA1: 4554a1a014a89586c42378bebae68f4ebb8fc4fc
+SHA256: 2c04800bdb9af96039f716449cf3377b772a0351f43733803f201848b02ece82
+Section: x11
+Priority: optional
+Description: simple utility to set the backlight level
+ xbacklight is a simple command-line utility to set the backlight level
+ using the RandR 1.2 Backlight output property.
+
+Package: xbacklight-dbgsym
+Source: xbacklight
+Version: 1.2.1-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 27
+Depends: xbacklight (= 1.2.1-2)
+Filename: ./xbacklight-dbgsym_1.2.1-2_amd64.deb
+Size: 11572
+MD5sum: 7acf8abaf26500cf201489e91df4e1cf
+SHA1: ae173612eecfde4df821a33ae0396219442fd137
+SHA256: e386349e653a653049b71259995f45850dc5ad3fb61eec422088d61598ed17d5
+Section: debug
+Priority: extra
+Description: Debug symbols for xbacklight
+Build-Ids: 77b89ced636a532ff7d7a3e50a1831f72e0f9d39
+
+Package: xbitmaps
+Version: 1.1.1-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 242
+Filename: ./xbitmaps_1.1.1-3_all.deb
+Size: 25804
+MD5sum: b0a19f364acd59dd34c5dc78eaca1937
+SHA1: 06b6f4234f7278783762084623a89924097e3aef
+SHA256: aa35e638c4a03979cfc3988b50312af0c8854fd760685b1aa33b7a904499946f
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: Base X bitmaps
+ This package contains the base X bitmaps, which are used in many legacy X
+ clients.
+
+Package: xcursor-themes
+Version: 1.0.4-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3694
+Filename: ./xcursor-themes_1.0.4-2_all.deb
+Size: 323206
+MD5sum: 3f1f5ac34db684885ce11f09d314c1a6
+SHA1: 56a0df8b8df32b616cd6a5a1010b63c08547da95
+SHA256: c0124fca00f2672feb41eda82ce2ae2a73eb7c63b98eddfc7d6c5548b67356e6
+Section: x11
+Priority: optional
+Description: Base X cursor themes
+ This package contains the additional base X cursor themes --
+ handhelds, redglass, and whiteglass. These themes are not essential
+ for the X server to run.
+
+Package: xdm
+Version: 1:1.1.11-4
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 665
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libx11-6, libxau6, libxaw7, libxdmcp6, libxext6, libxft2 (>> 2.1.1), libxinerama1, libxmu6, libxpm4, libxrender1, libxt6, debconf (>= 1.2.9) | debconf-2.0, x11-utils | xbase-clients | xmessage, cpp, lsb-base (>= 3.2-14), x11-xserver-utils, procps
+Provides: x-display-manager
+Filename: ./xdm_1.1.11-4_amd64.deb
+Size: 182930
+MD5sum: 6589fed9427066423190940955251522
+SHA1: 93bb51ceda75f20fa16864a1e4c9e14630f2d778
+SHA256: 2ae35c71f8ab9720eb761cd2b9df6e9d3acd1014c5d7a326717eac152606bfff
+Section: x11
+Priority: optional
+Description: X display manager
+ xdm manages a collection of X servers, which may be on the local host or
+ remote machines.  It provides services similar to those provided by init,
+ getty, and login on character-based terminals: prompting for login name and
+ password, authenticating the user, and running a session.  xdm supports XDMCP
+ (X Display Manager Control Protocol) and can also be used to run a chooser
+ process which presents the user with a menu of possible hosts that offer
+ XDMCP display management.
+
+Package: xdm-dbgsym
+Source: xdm
+Version: 1:1.1.11-4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 270
+Depends: xdm (= 1:1.1.11-4)
+Filename: ./xdm-dbgsym_1.1.11-4_amd64.deb
+Size: 224728
+MD5sum: c56fe23c229aa716f9a6bd2cf9d1ffa7
+SHA1: f3ffd550ad8b50fe02f5411c3bfdfc6c4421e4eb
+SHA256: 746ac43f085b5341fd262c7897dfeffab8fba7bb9128a169b8cfa09e63df76d2
+Section: debug
+Priority: extra
+Description: Debug symbols for xdm
+Build-Ids: 2bd648c7df51f1daf21a2ec8e0106486c3be59bd 3058466d4277c8feb7d04142bd8c239b19edd89f bbc9ea920389cb9d4099abbda0c54911b4de1cf0
+
+Package: xfonts-75dpi
+Version: 1:1.0.5
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3689
+Depends: xfonts-utils (>= 1:7.5+2)
+Suggests: xfs | xserver
+Filename: ./xfonts-75dpi_1.0.5_all.deb
+Size: 3366662
+MD5sum: 330a1445f94334075f6cc5c2c43190bf
+SHA1: 7be7623a829642ab9459e29c09eef2d9b9fe7830
+SHA256: 272f092f4f9842e16989b637feb95fb4c578224d42e5c4b624c90f5ec8addc86
+Section: fonts
+Priority: optional
+Multi-Arch: foreign
+Description: 75 dpi fonts for X
+ xfonts-75dpi provides a set of bitmapped fonts at 75 dots per inch.  In
+ most cases it is desirable to have the X font server (xfs) and/or an X server
+ installed to make the fonts available to X clients.
+ .
+ This package contains only fonts in the ISO 10646-1 and ISO 8859-1
+ encodings, to conserve disk space.  For other encodings, see the
+ xfonts-75dpi-transcoded package.
+ .
+ This package and xfonts-100dpi provide the same set of fonts, rendered at
+ different resolutions; only one or the other is necessary, but both may be
+ installed.  xfonts-75dpi may be more suitable for small monitors and/or
+ small screen resolutions (under 1024x768).
+ .
+ This package requires the xfonts-utils package to prepare the font
+ directories for use by an X server or X font server.
+
+Package: xfonts-75dpi-transcoded
+Source: xfonts-75dpi
+Version: 1:1.0.5
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 6887
+Depends: xfonts-utils
+Suggests: xfs | xserver
+Filename: ./xfonts-75dpi-transcoded_1.0.5_all.deb
+Size: 6231352
+MD5sum: cb1e671a31ae2afe11af565f01dee742
+SHA1: 72217ba1b5e66a68402627b7e13d787cb1ff0950
+SHA256: b057dfe4de723daed7205212d9a7f41ba4a5b9e147e3ded2427367a52b38379b
+Section: fonts
+Priority: optional
+Multi-Arch: foreign
+Description: 75 dpi fonts for X (transcoded from ISO 10646-1)
+ xfonts-75dpi-transcoded provides a set of bitmapped fonts at 75 dots per
+ inch.  In most cases it is desirable to have the X font server (xfs)
+ and/or an X server installed to make the fonts available to X clients.
+ .
+ This package contains fonts in several ISO 8859 encodings: -2, -3, -4, -9,
+ -10, -13, -14, and -15.  For the ISO 10646-1 and ISO 8859-1 encodings, see
+ the xfonts-75dpi package.
+ .
+ This package and xfonts-100dpi-transcoded provide the same set of fonts,
+ rendered at different resolutions; only one or the other is necessary, but
+ both may be installed.  xfonts-75dpi-transcoded may be more suitable for
+ small monitors and/or small screen resolutions (under 1024x768).
+ .
+ This package requires the xfonts-utils package to prepare the font
+ directories for use by an X server or X font server.
+
+Package: xfonts-cyrillic
+Version: 1:1.0.5
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 438
+Depends: xfonts-utils (>= 1:7.5+2)
+Suggests: xfs | xserver
+Filename: ./xfonts-cyrillic_1.0.5_all.deb
+Size: 386224
+MD5sum: 178df1aa02866a53700ad1e95ee4180d
+SHA1: dc80c823110f658832a130e2c9c82fdcc4499122
+SHA256: 7881363eacd27a22f10eed949ed0c101593e6dd0b39f9258891ba10b7c6aa17b
+Section: fonts
+Priority: optional
+Description: Cyrillic fonts for X
+ xfonts-cyrillic provides a set of fonts using the Cyrillic alphabet for X
+ servers.  In most cases it is desirable to have the X font server (xfs)
+ and/or an X server installed to make the fonts available to X clients.
+
+Package: xfonts-encodings
+Version: 1:1.0.4-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 664
+Depends: x11-common
+Replaces: xfonts-base (<< 1:1.0.0)
+Filename: ./xfonts-encodings_1.0.4-3_all.deb
+Size: 573418
+MD5sum: 833ad83c915042fd6d3da86bc29c0b6e
+SHA1: 34c493baeb9ee7c4e0c107fac750f000320c16ba
+SHA256: a841f37441d3525303706cc15fe8da13fa9006e6565527db50d637df99fc48bd
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: Encodings for X.Org fonts
+ This package contains the encodings that map to specific characters.
+
+Package: xinit
+Version: 1.3.4-4
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 82
+Depends: libc6 (>= 2.11), libx11-6, coreutils (>= 7.4-1), x11-common, xauth
+Recommends: xserver-xorg | xserver, xterm | x-session-manager | x-window-manager | x-terminal-emulator
+Filename: ./xinit_1.3.4-4_amd64.deb
+Size: 47884
+MD5sum: f88c2c537cfa5f3cb4b6804e4d89b87b
+SHA1: 79c8bf8479d18314e46ffa38709e669416960f35
+SHA256: 95aeeba6b26f33f7615f1b9e08710d1703e2e3f01a14fe80b37e4fdf3f063c0a
+Section: x11
+Priority: optional
+Description: X server initialisation tool
+ xinit and startx are programs which facilitate starting an X server, and
+ loading a base X session.
+
+Package: xinit-dbgsym
+Source: xinit
+Version: 1.3.4-4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 30
+Depends: xinit (= 1.3.4-4)
+Filename: ./xinit-dbgsym_1.3.4-4_amd64.deb
+Size: 14530
+MD5sum: eb734b61b2afe32bc31651980086cb2d
+SHA1: e9afe7414c6a0e686b9f69df9d463ab7bf556233
+SHA256: 40e677281cc8de8dd1e8a3f9e5eb7b72f90f49789296a1e7c833f45337fca53d
+Section: debug
+Priority: extra
+Description: Debug symbols for xinit
+Build-Ids: 6353631aaadba4e112659c53cd99ae4e1c8d1558
+
+Package: xinput
+Version: 1.6.2-2
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 95
+Depends: libc6 (>= 2.7), libx11-6 (>= 2:1.2.99.901), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2 (>= 2:1.2.0)
+Filename: ./xinput_1.6.2-2_amd64.deb
+Size: 51720
+MD5sum: cfe2f7448560e6b5df50a15162d4ef06
+SHA1: bc2ce0628d37ea6e1a9ec9c1347ecf64896c7342
+SHA256: 14e2907142f9184e082c5b76b7e4220ea34438869200a268cdd78ceaf4540028
+Section: x11
+Priority: optional
+Description: Runtime configuration and test of XInput devices
+ Xinput is an utility for configuring and testing XInput
+ devices.
+
+Package: xinput-dbgsym
+Source: xinput
+Version: 1.6.2-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 87
+Depends: xinput (= 1.6.2-2)
+Filename: ./xinput-dbgsym_1.6.2-2_amd64.deb
+Size: 69632
+MD5sum: 1a47e6954d7e13ee32cdd2a35daa0f34
+SHA1: 0ecb2ca0148b48cea1cb396dec3e4fff08e19006
+SHA256: 43831f66d7b31621667e72081021cd12b3131319785ff214b732110ea4b01211
+Section: debug
+Priority: extra
+Description: Debug symbols for xinput
+Build-Ids: 3e02953d19555262dd23c17d5c7ff27baba62663
 
 Package: xserver-xorg-input-joystick
 Version: 1:1.6.3-2
