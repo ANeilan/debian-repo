@@ -1,3 +1,25 @@
+Package: jetty8
+Version: 8.1.16-4
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 860
+Depends: adduser, apache2-utils, default-jre-headless | java6-runtime-headless, libjetty8-java (>= 8.1.16-4), libjetty8-extra-java (>= 8.1.16-4)
+Recommends: authbind
+Suggests: libjetty8-java-doc (>= 8.1.16-4)
+Filename: ./jetty8_8.1.16-4_all.deb
+Size: 624092
+MD5sum: 88708a2658bebac6c594d0d9b1c1c82c
+SHA1: e6cb5508a92fd2a3349d302c7318cec397f78be4
+SHA256: 80d98cc718d26924b0d4b3ec5215d033f8fcab38214be2541116f33b42e7bb41
+Section: java
+Priority: optional
+Homepage: http://www.eclipse.org/jetty/
+Description: Java servlet engine and webserver
+ Jetty is an Open Source HTTP Servlet Server written in 100% Java.
+ It is designed to be light weight, high performance, embeddable,
+ extensible and flexible, thus making it an ideal platform for serving
+ dynamic HTTP requests from any Java application.
+
 Package: libcuda1
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -942,6 +964,79 @@ Description: Vendor neutral GL dispatch library -- libGLX
  .
  This package contains the (binary) GLVND libGLX.so.0 stub library provided by
  NVIDIA which dispatches to vendor implementations (libGLX_*.so.0) via GLVND.
+
+Package: libjetty8-extra-java
+Source: jetty8
+Version: 8.1.16-4
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 676
+Depends: libasm3-java, libmail-java, libjakarta-taglibs-standard-java, libjetty8-java (>= 8.1.16-4), libjstl1.1-java, libservlet3.0-java, libtomcat7-java (>= 7.0.56-1~)
+Suggests: jetty8
+Filename: ./libjetty8-extra-java_8.1.16-4_all.deb
+Size: 449058
+MD5sum: 25e5f8abae242c59709bd6873187fa62
+SHA1: 545dc79b50ec85f216ae426e6e35fa285d440f45
+SHA256: d2ad667fce872150ae038fa7b59f9245c14da9037a0642124cdf373417fca2d6
+Section: java
+Priority: optional
+Homepage: http://www.eclipse.org/jetty/
+Description: Java servlet engine and webserver -- extra libraries
+ Jetty is an Open Source HTTP Servlet Server written in 100% Java.
+ It is designed to be light weight, high performance, embeddable,
+ extensible and flexible, thus making it an ideal platform for serving
+ dynamic HTTP requests from any Java application.
+ The extra libraries include jetty-management, jetty-naming,
+ jetty-servlet-tester, jetty-ajp, jetty-java5-threadpool,
+ jetty-client, jetty-rewrite-handler, jetty-plus, jetty-annotations
+
+Package: libjetty8-java
+Source: jetty8
+Version: 8.1.16-4
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 2256
+Depends: libservlet3.0-java
+Suggests: jetty8, libjetty8-java-doc
+Filename: ./libjetty8-java_8.1.16-4_all.deb
+Size: 1666088
+MD5sum: 9b3da22b1bada3d479fc216cd37de5d1
+SHA1: 93fd71956227962dae1bbbfc369ab9dd9c0d6243
+SHA256: 348efabb6a16e6800192209a5a5386a1970ab96e92de3d6eb667be7b4901c818
+Section: java
+Priority: optional
+Homepage: http://www.eclipse.org/jetty/
+Description: Java servlet engine and webserver -- core libraries
+ Jetty is an Open Source HTTP Servlet Server written in 100% Java.
+ It is designed to be light weight, high performance, embeddable,
+ extensible and flexible, thus making it an ideal platform for serving
+ dynamic HTTP requests from any Java application.
+ .
+ This package contains the core libraries
+
+Package: libjetty8-java-doc
+Source: jetty8
+Version: 8.1.16-4
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 33409
+Recommends: default-jdk-doc, libmail-java-doc, libservlet3.0-java-doc
+Suggests: libjetty8-java
+Filename: ./libjetty8-java-doc_8.1.16-4_all.deb
+Size: 1368724
+MD5sum: b3ef603a7e7e3d3ae158030bd59cfc62
+SHA1: df8dadc975a6ae41e319ac59bc6f62aa109d2317
+SHA256: 2852794e485016e039c9061c754a8689991022177df96e48fa9e35a8640f948a
+Section: doc
+Priority: optional
+Homepage: http://www.eclipse.org/jetty/
+Description: Javadoc for the Jetty API
+ Jetty is an Open Source HTTP Servlet Server written in 100% Java.
+ It is designed to be light weight, high performance, embeddable,
+ extensible and flexible, thus making it an ideal platform for serving
+ dynamic HTTP requests from any Java application.
+ .
+ This package contains the Javadoc for libjetty8-java.
 
 Package: libnvcuvid1
 Source: nvidia-graphics-drivers
