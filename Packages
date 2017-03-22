@@ -3058,6 +3058,58 @@ Description: Secure Sockets Layer toolkit - cryptographic utility
   * testing SSL/TLS clients and servers;
   * handling S/MIME signed or encrypted mail.
 
+Package: xserver-xorg-video-intel
+Version: 2:2.99.917+git20170309-1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3202
+Depends: libc6 (>= 2.17), libdrm-intel1 (>= 2.4.38), libdrm2 (>= 2.4.25), libpciaccess0 (>= 0.8.0+git20071002), libpixman-1-0 (>= 0.30.0), libudev1 (>= 183), libx11-6, libx11-xcb1, libxcb-dri2-0, libxcb-dri3-0, libxcb-sync1, libxcb-util0 (>= 0.3.8), libxcb1, libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2 (>= 2:1.2.99.2), libxrender1, libxshmfence1, libxss1, libxtst6, libxv1, libxvmc1, xorg-video-abi-23, xserver-xorg-core (>= 2:1.18.99.901)
+Provides: xorg-driver-video
+Filename: ./xserver-xorg-video-intel_2.99.917+git20170309-1_amd64.deb
+Size: 1648870
+MD5sum: e6e123694a6aaa4c4d75089499271be6
+SHA1: 5d34cbcaf09387308eb4aea57e5a03b08b275b4a
+SHA256: 38e59bb1a018eb2d70f8f374922ae09c8f71ed3b8630496fcb4efc6af2cce454
+Section: x11
+Priority: optional
+Homepage: https://www.x.org/
+Description: X.Org X server -- Intel i8xx, i9xx display driver
+ This package provides the driver for the Intel i8xx and i9xx family
+ of chipsets, including i810, i815, i830, i845, i855, i865, i915, i945
+ and i965 series chips.
+ .
+ This package also provides XvMC (XVideo Motion Compensation) drivers
+ for i810/i815 and i9xx and newer chipsets.
+ .
+ This package is built from the X.org xf86-video-intel driver module.
+ .
+ The use of this driver is discouraged if your hw is new enough (ca.
+ 2007 and newer). You can try uninstalling this driver and let the
+ server use it's builtin modesetting driver instead.
+
+Package: xserver-xorg-video-intel-dbg
+Source: xserver-xorg-video-intel
+Version: 2:2.99.917+git20170309-1
+Architecture: amd64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5196
+Depends: xserver-xorg-video-intel (= 2:2.99.917+git20170309-1)
+Recommends: intel-gpu-tools
+Filename: ./xserver-xorg-video-intel-dbg_2.99.917+git20170309-1_amd64.deb
+Size: 5093054
+MD5sum: d544130de26f842601eff314fef57a47
+SHA1: 9aa49008d81fcab24f80bc4f493f63f4caad48a3
+SHA256: f9d23cd1ee30950f4b7e6ed28923889f954ede0ed53d255fdd07e20d5260fe22
+Section: debug
+Priority: extra
+Homepage: https://www.x.org/
+Description: X.Org X server -- Intel i8xx, i9xx display driver (debug symbols)
+ This driver provides support for the Intel i8xx and i9xx family of chipsets,
+ including i810, i815, i830, i845, i855, i865, i915, and i945 series chips.
+ .
+ This package provides debugging symbols for this Xorg X driver.
+Build-Ids: 1f86cabaffa2108b8e71ed8fa2d14067310a7c0a 42af27e628f8e0105876d388fd0380a4dbc8d8cd a31072afd4615fcf278a863b111493f90332065b b569ee4d3667a6e294a80fa6bb8119ade33b9647 dd5f687bfb261ce1bb39315e413f7b4646731b6a
+
 Package: xserver-xorg-video-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
