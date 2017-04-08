@@ -1,3 +1,50 @@
+Package: i2pd
+Version: 2.13.0-1sid1
+Architecture: amd64
+Maintainer: R4SAS <r4sas@i2pmail.org>
+Installed-Size: 2440
+Pre-Depends: adduser
+Depends: libboost-date-time1.62.0, libboost-filesystem1.62.0, libboost-program-options1.62.0, libboost-system1.62.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 6), zlib1g (>= 1:1.1.4)
+Suggests: tor, privoxy
+Filename: ./i2pd_2.13.0-1sid1_amd64.deb
+Size: 724330
+MD5sum: 46922cdd3242ba6c46e7be2b288a362f
+SHA1: c0abb361a4be76430d15e12f0e7a518d44e1aa1c
+SHA256: 8f88b17518bed92ff36a1fd4ab9ba925e7a95c762f96af04f35f4e75e524d565
+Section: net
+Priority: optional
+Homepage: http://i2pd.website/
+Description: i2pd is a full-featured C++ implementation of I2P client.
+ I2P (Invisible Internet Protocol) is a universal anonymous network layer. All
+ communications over I2P are anonymous and end-to-end encrypted, participants
+ don't reveal their real IP addresses.
+ .
+ This package contains the full-featured C++ implementation of I2P router.
+
+Package: i2pd-dbg
+Source: i2pd
+Version: 2.13.0-1sid1
+Architecture: amd64
+Maintainer: R4SAS <r4sas@i2pmail.org>
+Installed-Size: 20230
+Depends: i2pd (= 2.13.0-1sid1)
+Suggests: gdb
+Filename: ./i2pd-dbg_2.13.0-1sid1_amd64.deb
+Size: 19917148
+MD5sum: 2d89a5ea3baa7fccc3ac87918ab6fb13
+SHA1: f26d02770d58379185c7e801813c396a2e030013
+SHA256: fb26afe322919f064d742a15d263ad7cd2ec068c96194f84a63737503a25d554
+Section: debug
+Priority: extra
+Homepage: http://i2pd.website/
+Description: i2pd debugging symbols
+ I2P (Invisible Internet Protocol) is a universal anonymous network layer. All
+ communications over I2P are anonymous and end-to-end encrypted, participants
+ don't reveal their real IP addresses.
+ .
+ This package contains symbols required for debugging.
+Build-Ids: f54b260ec47a67b228172e201f1592e4d45700f2
+
 Package: libcuda1
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
