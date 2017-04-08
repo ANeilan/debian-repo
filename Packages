@@ -70,6 +70,78 @@ Description: NVIDIA CUDA Driver Library
  for building the kernel module required by this package.
  This will provide nvidia-kernel-378.13.
 
+Package: libcuda1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 8757
+Pre-Depends: nvidia-legacy-check (>= 343)
+Depends: nvidia-support, nvidia-alternative (= 381.09-1~svn1), libnvidia-fatbinaryloader (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-smi, nvidia-persistenced, libcuda1-i386
+Suggests: nvidia-cuda-mps, nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Provides: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda1-any
+Filename: ./libcuda1_381.09-1~svn1_amd64.deb
+Size: 1667554
+MD5sum: 2b936d784f98b16caf4069b183dde404
+SHA1: c17e9a1e5ad56cbba8e86deaa170e648f735d315
+SHA256: 40089fa0689681d507795dc89d9c38ce915d57382d35836c16e49cba34db159c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com/CUDA
+Description: NVIDIA CUDA Driver Library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Driver API library for low-level CUDA
+ programming.
+ .
+ Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
+ series, as well as the Tesla computing processors.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+
+Package: libcuda1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 8225
+Pre-Depends: nvidia-legacy-check (>= 343)
+Depends: nvidia-support, nvidia-alternative (= 381.09-1~svn1), libnvidia-fatbinaryloader (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-smi, nvidia-persistenced
+Suggests: nvidia-cuda-mps, nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Provides: libcuda-5.0-1, libcuda-5.0-1-i386, libcuda-5.5-1, libcuda-5.5-1-i386, libcuda-6.0-1, libcuda-6.0-1-i386, libcuda-6.5-1, libcuda-6.5-1-i386, libcuda-7.0-1, libcuda-7.0-1-i386, libcuda-7.5-1, libcuda-7.5-1-i386, libcuda-8.0-1, libcuda-8.0-1-i386, libcuda1-any
+Filename: ./libcuda1_381.09-1~svn1_i386.deb
+Size: 1637296
+MD5sum: a4b2e03e15f99328751490788cb02ce5
+SHA1: 8c1f2370c5f304faf5061716226a0a926776402f
+SHA256: 830351054fc75cfaed90205769787090f0b24e2784a9c55321c8dfcf420ce22c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com/CUDA
+Description: NVIDIA CUDA Driver Library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Driver API library for low-level CUDA
+ programming.
+ .
+ Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
+ series, as well as the Tesla computing processors.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+
 Package: libcuda1-i386
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -90,6 +162,54 @@ Description: NVIDIA CUDA 32-bit runtime library
  This metapackage helps the automatic installation of the 32-bit NVIDIA CUDA
  library when installing libcuda1 on amd64 with foreign
  architecture i386 enabled.
+
+Package: libcuda1-i386
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: libcuda1
+Filename: ./libcuda1-i386_381.09-1~svn1_i386.deb
+Size: 171364
+MD5sum: 3ecaa4d53aa023f720044323e6e79907
+SHA1: 514666be4a73890a96887c4aa9cec4e89f86c3ed
+SHA256: 35d2a10317b1379b7bb88870c445f97a33955b5aaa4f96fa185aa6d7eab77304
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA CUDA 32-bit runtime library
+ This metapackage helps the automatic installation of the 32-bit NVIDIA CUDA
+ library when installing libcuda1 on amd64 with foreign
+ architecture i386 enabled.
+
+Package: libegl-nvidia0
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 946
+Depends: nvidia-alternative (= 378.13-1~svn1), libnvidia-eglcore (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libegl-nvidia0_378.13-1~svn1_i386.deb
+Size: 312720
+MD5sum: 1e48583cbefcebfee3fd6f66dbe9cd2a
+SHA1: 74fedc0aa0f10910e2935b9318927d07ebb0422e
+SHA256: 72b9135907686ae31d00fb21a83686fc93680a010be126ab143265811bb7f3fb
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL library
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary EGL implementation provided
+ by NVIDIA that is accessed via GLVND.
 
 Package: libegl-nvidia0
 Source: nvidia-graphics-drivers
@@ -120,16 +240,43 @@ Description: NVIDIA binary EGL library
 
 Package: libegl-nvidia0
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1342
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Filename: ./libegl-nvidia0_381.09-1~svn1_amd64.deb
+Size: 357884
+MD5sum: 6ff2ede0fdda0bcf9f7de27166214f5f
+SHA1: 21f4a9ddc6b4aa17f21227861ecd269e1d0d0ae4
+SHA256: 37a61f4f82be5552d3f0a84f7e2c968e5ef2afe8ff68cbb4c3bf4a0c28e753c8
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL library
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary EGL implementation provided
+ by NVIDIA that is accessed via GLVND.
+
+Package: libegl-nvidia0
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 946
-Depends: nvidia-alternative (= 378.13-1~svn1), libnvidia-eglcore (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
-Filename: ./libegl-nvidia0_378.13-1~svn1_i386.deb
-Size: 312720
-MD5sum: 1e48583cbefcebfee3fd6f66dbe9cd2a
-SHA1: 74fedc0aa0f10910e2935b9318927d07ebb0422e
-SHA256: 72b9135907686ae31d00fb21a83686fc93680a010be126ab143265811bb7f3fb
+Installed-Size: 980
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libegl-nvidia0_381.09-1~svn1_i386.deb
+Size: 322722
+MD5sum: c1c848d1b22464de20e2811c3766246d
+SHA1: 5eff2cf5f38894ce3d1cb47640564a0892ae5f72
+SHA256: bc81352bc9e8edd0d650213890a320c00257e0f967df23f04c0e408ad613d81b
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -195,6 +342,79 @@ Description: Vendor neutral GL dispatch library -- libEGL
  This package contains the (binary) GLVND libEGL.so.1 stub library provided by
  NVIDIA which dispatches to vendor implementations (libEGL_*.so.0) via GLVND.
 
+Package: libegl1-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 270
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.1), libgldispatch0 | libgldispatch0-nvidia (>= 375.20)
+Conflicts: libegl1-nvidia
+Replaces: libegl1-nvidia
+Filename: ./libegl1-glvnd-nvidia_381.09-1~svn1_i386.deb
+Size: 198972
+MD5sum: e8728ed81eba4376205154c224edc590
+SHA1: 5aa98b46f4b5d610971edcdea563ae77f8cf333e
+SHA256: 3cb7d26da50736af627820800e6fe0706e023b1d7fa68fcaa562799cf972f075
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libEGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libEGL.so.1 stub library provided by
+ NVIDIA which dispatches to vendor implementations (libEGL_*.so.0) via GLVND.
+
+Package: libegl1-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 271
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 375.20)
+Conflicts: libegl1-nvidia
+Replaces: libegl1-nvidia
+Filename: ./libegl1-glvnd-nvidia_381.09-1~svn1_amd64.deb
+Size: 198310
+MD5sum: 351d68183c24da75754f87d6ee02d774
+SHA1: 081a431c8e0d777cee2aec41dacb09892317a8fd
+SHA256: 9f822c2715f3cf961a3c8c71881d643745b18ce7769462062665e9ce89dd7d4d
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libEGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libEGL.so.1 stub library provided by
+ NVIDIA which dispatches to vendor implementations (libEGL_*.so.0) via GLVND.
+
+Package: libegl1-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 214
+Depends: nvidia-alternative (= 378.13-1~svn1), libegl-nvidia0 (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361.45)
+Filename: ./libegl1-nvidia_378.13-1~svn1_amd64.deb
+Size: 177060
+MD5sum: 934fe979bbaaba9ece80bc7f2f9e110b
+SHA1: 0fe8c239ca41316e31de278fcd85511b24ca7b87
+SHA256: 111d46f238f2c92bead5b1ed878a331e4545aca44bf5f585f6018e3a46d7b7b2
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL library (non-GLVND variant)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the driver specific binary EGL implementation by NVIDIA
+ as a non-GLVND alternative.
+
 Package: libegl1-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -220,16 +440,16 @@ Description: NVIDIA binary EGL library (non-GLVND variant)
 
 Package: libegl1-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 214
-Depends: nvidia-alternative (= 378.13-1~svn1), libegl-nvidia0 (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361.45)
-Filename: ./libegl1-nvidia_378.13-1~svn1_amd64.deb
-Size: 177060
-MD5sum: 934fe979bbaaba9ece80bc7f2f9e110b
-SHA1: 0fe8c239ca41316e31de278fcd85511b24ca7b87
-SHA256: 111d46f238f2c92bead5b1ed878a331e4545aca44bf5f585f6018e3a46d7b7b2
+Installed-Size: 212
+Depends: nvidia-alternative (= 381.09-1~svn1), libegl-nvidia0 (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.1), libgldispatch0 | libgldispatch0-nvidia (>= 361.45)
+Filename: ./libegl1-nvidia_381.09-1~svn1_i386.deb
+Size: 178192
+MD5sum: 9459bde1fe7a4af042a264465c761960
+SHA1: 96fdb18cdb166c383a63a248f5727545b3a93331
+SHA256: 26d077fc383439b554a68dca67ba0d770e22fa710fbda2a1406245920836b28a
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -240,6 +460,54 @@ Description: NVIDIA binary EGL library (non-GLVND variant)
  .
  This package contains the driver specific binary EGL implementation by NVIDIA
  as a non-GLVND alternative.
+
+Package: libegl1-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 216
+Depends: nvidia-alternative (= 381.09-1~svn1), libegl-nvidia0 (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361.45)
+Filename: ./libegl1-nvidia_381.09-1~svn1_amd64.deb
+Size: 178814
+MD5sum: 1a8a004ab5e498c0f658220f5e92364d
+SHA1: e72944253886137397a736197a66d5076971a265
+SHA256: 82528d69a6e4e0c02a039dd02b6ce5540675a87f597d588e82c10b4ab3e769cc
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL library (non-GLVND variant)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the driver specific binary EGL implementation by NVIDIA
+ as a non-GLVND alternative.
+
+Package: libgl1-glvnd-nvidia-glx
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 871
+Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361), libglx0 | libglx0-glvnd-nvidia (>= 361)
+Conflicts: libgl1-nvidia-glx
+Replaces: libgl1-nvidia-glx
+Filename: ./libgl1-glvnd-nvidia-glx_378.13-1~svn1_amd64.deb
+Size: 247716
+MD5sum: 9156a1bd3d0dcf7d37ef6b52e9aadc78
+SHA1: 3f4a3bf6673d562267022ceffb76a28b2a25413e
+SHA256: ce277ddf685077bb1a47c1407a9a97407f5ea9ad4a16fc4d30d5aa2e08f79a90
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGL.so.1 stub library provided by
+ NVIDIA which dispatches to vendor implementations via GLVND.
 
 Package: libgl1-glvnd-nvidia-glx
 Source: nvidia-graphics-drivers
@@ -268,18 +536,43 @@ Description: Vendor neutral GL dispatch library -- libGL
 
 Package: libgl1-glvnd-nvidia-glx
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 871
-Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361), libglx0 | libglx0-glvnd-nvidia (>= 361)
+Installed-Size: 873
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361), libglx0 | libglx0-glvnd-nvidia (>= 361)
 Conflicts: libgl1-nvidia-glx
 Replaces: libgl1-nvidia-glx
-Filename: ./libgl1-glvnd-nvidia-glx_378.13-1~svn1_amd64.deb
-Size: 247716
-MD5sum: 9156a1bd3d0dcf7d37ef6b52e9aadc78
-SHA1: 3f4a3bf6673d562267022ceffb76a28b2a25413e
-SHA256: ce277ddf685077bb1a47c1407a9a97407f5ea9ad4a16fc4d30d5aa2e08f79a90
+Filename: ./libgl1-glvnd-nvidia-glx_381.09-1~svn1_amd64.deb
+Size: 249442
+MD5sum: 046afd4590b9a24387e4d7b0df84067a
+SHA1: 59c6453d19291381c42b860e2e3dfa782c91c001
+SHA256: 26e94b92afdf6043440d79b05a6928be0a89452fe56b815ddeb9bc311bf8a156
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGL.so.1 stub library provided by
+ NVIDIA which dispatches to vendor implementations via GLVND.
+
+Package: libgl1-glvnd-nvidia-glx
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 736
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361), libglx0 | libglx0-glvnd-nvidia (>= 361)
+Conflicts: libgl1-nvidia-glx
+Replaces: libgl1-nvidia-glx
+Filename: ./libgl1-glvnd-nvidia-glx_381.09-1~svn1_i386.deb
+Size: 244584
+MD5sum: 5574497636fef1871db7c261c8154997
+SHA1: 7d71511e7248ff81b3897ed06bc5e424bbe67d50
+SHA256: 05361ac7f75fdc078ad21ff3520c50a0a13459b8a3f511088ae9fd3faa619d96
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -349,6 +642,96 @@ Description: NVIDIA binary OpenGL/GLX library (GLVND variant)
  This metapackage depends on the NVIDIA binary OpenGL/GLX implementation using
  GLVND and the corresponding GLVND loader library.
 
+Package: libgl1-nvidia-glvnd-glx
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 335
+Depends: libgl1-glvnd-glx | libgl1-glvnd-nvidia-glx, libglx-nvidia0 (= 381.09-1~svn1)
+Provides: libgl1-nvidia-glx-any
+Filename: ./libgl1-nvidia-glvnd-glx_381.09-1~svn1_amd64.deb
+Size: 323288
+MD5sum: 873bb84f1e5a16dd3f6ad7557f60bec5
+SHA1: 40d7bd5a43844fae675e09c4125e747bb4cf40f3
+SHA256: 6a789bce4ba57049d0b244f976c230ef418c0a550d3f63842cc3d009b550572c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX library (GLVND variant)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glvnd-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This metapackage depends on the NVIDIA binary OpenGL/GLX implementation using
+ GLVND and the corresponding GLVND loader library.
+
+Package: libgl1-nvidia-glvnd-glx
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 335
+Depends: libgl1-glvnd-glx | libgl1-glvnd-nvidia-glx, libglx-nvidia0 (= 381.09-1~svn1)
+Provides: libgl1-nvidia-glx-any
+Filename: ./libgl1-nvidia-glvnd-glx_381.09-1~svn1_i386.deb
+Size: 323288
+MD5sum: 175a61e10dbf577a82d8dc5e88f3ec32
+SHA1: ec497ff7c56937461c8bc25d73f8df2c771b917c
+SHA256: b51004326efc0bfc7c78d491ed729ce36748d3fbeb9280ac04f10ecc9175b09e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX library (GLVND variant)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glvnd-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This metapackage depends on the NVIDIA binary OpenGL/GLX implementation using
+ GLVND and the corresponding GLVND loader library.
+
+Package: libgl1-nvidia-glx
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1527
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: nvidia-alternative (= 378.13-1~svn1), libnvidia-glcore (= 378.13-1~svn1), nvidia-installer-cleanup (>= 20130816), nvidia-support, libc6 (>= 2.1.3), libx11-6, libxext6
+Recommends: nvidia-kernel-dkms (= 378.13-1~svn1) | nvidia-kernel-378.13
+Suggests: nvidia-kernel-dkms (>= 378.13) | nvidia-kernel-source (>= 378.13)
+Provides: libgl1-nvidia-glx-any
+Filename: ./libgl1-nvidia-glx_378.13-1~svn1_i386.deb
+Size: 563036
+MD5sum: 934f38817ede72bfac49db6f4ec94d36
+SHA1: 31a5b4050b749e4f9fa6268d6a69476ea2c3527c
+SHA256: 98adc8cf59ddf7835cb9b5e7719438721ca0bb890501e2153e03dfbed1528e2e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX library (non-GLVND variant)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL/GLX implementation
+ provided by NVIDIA as a non-GLVND alternative.
+
 Package: libgl1-nvidia-glx
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -383,20 +766,20 @@ Description: NVIDIA binary OpenGL/GLX library (non-GLVND variant)
 
 Package: libgl1-nvidia-glx
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: i386
+Version: 381.09-1~svn1
+Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 1527
+Installed-Size: 1690
 Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
-Depends: nvidia-alternative (= 378.13-1~svn1), libnvidia-glcore (= 378.13-1~svn1), nvidia-installer-cleanup (>= 20130816), nvidia-support, libc6 (>= 2.1.3), libx11-6, libxext6
-Recommends: nvidia-kernel-dkms (= 378.13-1~svn1) | nvidia-kernel-378.13
-Suggests: nvidia-kernel-dkms (>= 378.13) | nvidia-kernel-source (>= 378.13)
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-glcore (= 381.09-1~svn1), nvidia-support, libc6 (>= 2.2.5), libx11-6, libxext6
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
 Provides: libgl1-nvidia-glx-any
-Filename: ./libgl1-nvidia-glx_378.13-1~svn1_i386.deb
-Size: 563036
-MD5sum: 934f38817ede72bfac49db6f4ec94d36
-SHA1: 31a5b4050b749e4f9fa6268d6a69476ea2c3527c
-SHA256: 98adc8cf59ddf7835cb9b5e7719438721ca0bb890501e2153e03dfbed1528e2e
+Filename: ./libgl1-nvidia-glx_381.09-1~svn1_amd64.deb
+Size: 579134
+MD5sum: f8ab24458e2e07b8f2d929dc838ee71b
+SHA1: f0f98f4188f429e9aba2d750b2255c70f2d0cf36
+SHA256: c9f194e004c7f8dd6783ce78fa126dfccfae77b864483bea3cf4c15402626451
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -412,6 +795,64 @@ Description: NVIDIA binary OpenGL/GLX library (non-GLVND variant)
  .
  This package contains the driver specific binary OpenGL/GLX implementation
  provided by NVIDIA as a non-GLVND alternative.
+
+Package: libgl1-nvidia-glx
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1534
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-glcore (= 381.09-1~svn1), nvidia-installer-cleanup (>= 20130816), nvidia-support, libc6 (>= 2.1.3), libx11-6, libxext6
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Provides: libgl1-nvidia-glx-any
+Filename: ./libgl1-nvidia-glx_381.09-1~svn1_i386.deb
+Size: 565162
+MD5sum: 89429fe659b124873dd370d3ab0099b2
+SHA1: c4006dc7139fa96e8048eb89c52884a2ad200ac2
+SHA256: bbf21f0fe3f4808dd8d048da7d18053ffbd86d3be260c833e4be8d658fc32881
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX library (non-GLVND variant)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL/GLX implementation
+ provided by NVIDIA as a non-GLVND alternative.
+
+Package: libgldispatch0-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 994
+Depends: libc6 (>= 2.2.5)
+Conflicts: libgldispatch0, libglvnd0
+Replaces: libgldispatch0
+Provides: glvnd-nvidia-abi-375.20
+Filename: ./libgldispatch0-nvidia_378.13-1~svn1_amd64.deb
+Size: 233828
+MD5sum: c82714a5431bdee474fa846aa603883e
+SHA1: c884d809de4b8102984eaa0b0585a4a69fd01a9d
+SHA256: ba772801999a982e882121756023a4782717684f7c664a443e440c2bbea01ec3
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGLdispatch
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGLdispatch.so.0 shared library
+ provided by NVIDIA.
 
 Package: libgldispatch0-nvidia
 Source: nvidia-graphics-drivers
@@ -441,19 +882,19 @@ Description: Vendor neutral GL dispatch library -- libGLdispatch
 
 Package: libgldispatch0-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 994
-Depends: libc6 (>= 2.2.5)
+Installed-Size: 727
+Depends: libc6 (>= 2.0)
 Conflicts: libgldispatch0, libglvnd0
 Replaces: libgldispatch0
 Provides: glvnd-nvidia-abi-375.20
-Filename: ./libgldispatch0-nvidia_378.13-1~svn1_amd64.deb
-Size: 233828
-MD5sum: c82714a5431bdee474fa846aa603883e
-SHA1: c884d809de4b8102984eaa0b0585a4a69fd01a9d
-SHA256: ba772801999a982e882121756023a4782717684f7c664a443e440c2bbea01ec3
+Filename: ./libgldispatch0-nvidia_381.09-1~svn1_i386.deb
+Size: 228938
+MD5sum: f6d0e0f96771fbb8aa36b78f674037fd
+SHA1: c78ac9f035728872ebdccc38fb62f3d1ca2668a1
+SHA256: 6bc71ff49c7c3ae38998c400c84d3f83d6af93cc7bde50b3ec71c2a66038a7db
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -464,6 +905,63 @@ Description: Vendor neutral GL dispatch library -- libGLdispatch
  .
  This package contains the (binary) GLVND libGLdispatch.so.0 shared library
  provided by NVIDIA.
+
+Package: libgldispatch0-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 996
+Depends: libc6 (>= 2.2.5)
+Conflicts: libgldispatch0, libglvnd0
+Replaces: libgldispatch0
+Provides: glvnd-nvidia-abi-375.20
+Filename: ./libgldispatch0-nvidia_381.09-1~svn1_amd64.deb
+Size: 235572
+MD5sum: a42bcccaf0bf1179c310dc3c291dda0d
+SHA1: f8241019fcb6ee44715699bb0492d45bca20b330
+SHA256: f50e69226c01d71d58e50a287dbe5844c8ee54451101f584717772b1508ae9d2
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGLdispatch
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGLdispatch.so.0 shared library
+ provided by NVIDIA.
+
+Package: libgles-nvidia1
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 243
+Depends: nvidia-alternative (= 378.13-1~svn1), libgles1-glvnd | libgles1-glvnd-nvidia, libnvidia-eglcore (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libgles-nvidia1_378.13-1~svn1_i386.deb
+Size: 186084
+MD5sum: f28ff2ed75d0b9d90ecd21f8038bae37
+SHA1: 2751c0aa88e03d032f7e2ece714b002b8d1d3368
+SHA256: 54c478ffc095c0f6637efff252de75f2b50ba6266d0e703c93768ef3b0f12b6d
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL|ES 1.x implementation
+ by NVIDIA that is accessed via GLVND.
 
 Package: libgles-nvidia1
 Source: nvidia-graphics-drivers
@@ -498,16 +996,47 @@ Description: NVIDIA binary OpenGL|ES 1.x library
 
 Package: libgles-nvidia1
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 243
-Depends: nvidia-alternative (= 378.13-1~svn1), libgles1-glvnd | libgles1-glvnd-nvidia, libnvidia-eglcore (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
-Filename: ./libgles-nvidia1_378.13-1~svn1_i386.deb
-Size: 186084
-MD5sum: f28ff2ed75d0b9d90ecd21f8038bae37
-SHA1: 2751c0aa88e03d032f7e2ece714b002b8d1d3368
-SHA256: 54c478ffc095c0f6637efff252de75f2b50ba6266d0e703c93768ef3b0f12b6d
+Installed-Size: 245
+Depends: nvidia-alternative (= 381.09-1~svn1), libgles1-glvnd | libgles1-glvnd-nvidia, libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libgles-nvidia1_381.09-1~svn1_i386.deb
+Size: 187966
+MD5sum: d95303f4fe8695ca7d338e91d4d4d8a2
+SHA1: d9b455cbc87a747e75828fe76a5b9ae13990f64e
+SHA256: 23acd023dda92334c30fe55f793cf35d84d91b78ec942899583486a54249f6ba
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL|ES 1.x implementation
+ by NVIDIA that is accessed via GLVND.
+
+Package: libgles-nvidia1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 252
+Depends: nvidia-alternative (= 381.09-1~svn1), libgles1-glvnd | libgles1-glvnd-nvidia, libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Filename: ./libgles-nvidia1_381.09-1~svn1_amd64.deb
+Size: 188904
+MD5sum: 870a105905140279c415440f1e85e1f9
+SHA1: 553e99e8964d549d1d1d13d96e08eb86744065ab
+SHA256: 96061af0b79c3d5d169bf1829c94bc008e0c4c2157db41eea6793092cf9bb239
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -591,6 +1120,104 @@ Description: NVIDIA binary OpenGL|ES 2.x library
  This package contains the driver specific binary OpenGL|ES 2.x implementation
  by NVIDIA that is accessed via GLVND.
 
+Package: libgles-nvidia2
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 290
+Depends: nvidia-alternative (= 381.09-1~svn1), libgles2-glvnd | libgles2-glvnd-nvidia, libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Filename: ./libgles-nvidia2_381.09-1~svn1_amd64.deb
+Size: 193482
+MD5sum: d44fa8da57eadbf52b2f9d523935a1d3
+SHA1: a2c62aedf78746ef53bc57e8227c34d62e3e1894
+SHA256: 74f3e7866ac883761685011e9a07a0e4d79ca6ca06f2f56bb8a13febd4b454c6
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL|ES 2.x implementation
+ by NVIDIA that is accessed via GLVND.
+
+Package: libgles-nvidia2
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 284
+Depends: nvidia-alternative (= 381.09-1~svn1), libgles2-glvnd | libgles2-glvnd-nvidia, libnvidia-eglcore (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libgles-nvidia2_381.09-1~svn1_i386.deb
+Size: 192900
+MD5sum: cfc3d9c4ae33115cd3ed00fb8c34e093
+SHA1: 4675db92760968bc57423b7a03c07742cb84ffb8
+SHA256: 4093493ce24865f1d1cb46ea812920fb0ae5ec4c3c695e1bdc2d0322aefa8909
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL|ES 2.x implementation
+ by NVIDIA that is accessed via GLVND.
+
+Package: libgles1-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 234
+Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Breaks: libgles1-nvidia (<< 361)
+Replaces: libgles1-nvidia (<< 361)
+Filename: ./libgles1-glvnd-nvidia_378.13-1~svn1_amd64.deb
+Size: 178090
+MD5sum: d8d89eab6896a9f6b346676a42fb4761
+SHA1: 064c332a421e7a5454f83408d501e5b03de30da0
+SHA256: 765deefb7d395d6e263229241d317d59ab871343bd9b4ad2c3873ba6320eea6f
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x GLVND stub library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the (binary) GLVND libGLESv1_CM.so.1 stub library
+ provided by NVIDIA which dispatches to vendor implementations
+ (libGLESv1_CM_*.so.1) via GLVND.
+
 Package: libgles1-glvnd-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -627,18 +1254,18 @@ Description: NVIDIA binary OpenGL|ES 1.x GLVND stub library
 
 Package: libgles1-glvnd-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 234
-Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Installed-Size: 227
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361)
 Breaks: libgles1-nvidia (<< 361)
 Replaces: libgles1-nvidia (<< 361)
-Filename: ./libgles1-glvnd-nvidia_378.13-1~svn1_amd64.deb
-Size: 178090
-MD5sum: d8d89eab6896a9f6b346676a42fb4761
-SHA1: 064c332a421e7a5454f83408d501e5b03de30da0
-SHA256: 765deefb7d395d6e263229241d317d59ab871343bd9b4ad2c3873ba6320eea6f
+Filename: ./libgles1-glvnd-nvidia_381.09-1~svn1_i386.deb
+Size: 179522
+MD5sum: a97989cf6c50d4e07b5998f314aa6eab
+SHA1: 32b2a88c651a309424c2e7ca0150cc3999ea3665
+SHA256: 8e42940ac3570829c22a7bee7e7fb4cd74aea61f76ee20efa25e72a5962fd108
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -658,6 +1285,67 @@ Description: NVIDIA binary OpenGL|ES 1.x GLVND stub library
  This package contains the (binary) GLVND libGLESv1_CM.so.1 stub library
  provided by NVIDIA which dispatches to vendor implementations
  (libGLESv1_CM_*.so.1) via GLVND.
+
+Package: libgles1-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 236
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Breaks: libgles1-nvidia (<< 361)
+Replaces: libgles1-nvidia (<< 361)
+Filename: ./libgles1-glvnd-nvidia_381.09-1~svn1_amd64.deb
+Size: 179842
+MD5sum: c4f0538e20a87276efb4a2d34f5ec89d
+SHA1: b01d6430dd413cde35dc7bde2966b7771bb4dded
+SHA256: d68c64026b265f29b6823ea8f9e4186a28f3d606cd871da035950a72910b3438
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x GLVND stub library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the (binary) GLVND libGLESv1_CM.so.1 stub library
+ provided by NVIDIA which dispatches to vendor implementations
+ (libGLESv1_CM_*.so.1) via GLVND.
+
+Package: libgles1-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 182
+Depends: libgles-nvidia1 (= 378.13-1~svn1)
+Filename: ./libgles1-nvidia_378.13-1~svn1_amd64.deb
+Size: 169766
+MD5sum: 92283cf35deaa904300488ad6376972b
+SHA1: 99d25ae4f8cbbbd6b214b4f6a3db2c62221b1ded
+SHA256: a73dfed19a9de2e569cdf727fb1aa73460aea67f8e88938858d2f3b2ef4f627d
+Section: non-free/oldlibs
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x library (transitional)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This is a transitional package to aid switching to the GLVND based
+ implementation.
 
 Package: libgles1-nvidia
 Source: nvidia-graphics-drivers
@@ -688,16 +1376,16 @@ Description: NVIDIA binary OpenGL|ES 1.x library (transitional)
 
 Package: libgles1-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 182
-Depends: libgles-nvidia1 (= 378.13-1~svn1)
-Filename: ./libgles1-nvidia_378.13-1~svn1_amd64.deb
-Size: 169766
-MD5sum: 92283cf35deaa904300488ad6376972b
-SHA1: 99d25ae4f8cbbbd6b214b4f6a3db2c62221b1ded
-SHA256: a73dfed19a9de2e569cdf727fb1aa73460aea67f8e88938858d2f3b2ef4f627d
+Installed-Size: 184
+Depends: libgles-nvidia1 (= 381.09-1~svn1)
+Filename: ./libgles1-nvidia_381.09-1~svn1_amd64.deb
+Size: 171520
+MD5sum: 7e82176e48e2bd8b1328d293fd577c26
+SHA1: ad9b9e90a0d6ed59f3629aaed432ed7f6b2e0c67
+SHA256: 5c9783f391402db98508a6f548620fcf1f919620b7da3b58eed96cbc5713a6bf
 Section: non-free/oldlibs
 Priority: extra
 Multi-Arch: same
@@ -712,6 +1400,68 @@ Description: NVIDIA binary OpenGL|ES 1.x library (transitional)
  .
  This is a transitional package to aid switching to the GLVND based
  implementation.
+
+Package: libgles1-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: libgles-nvidia1 (= 381.09-1~svn1)
+Filename: ./libgles1-nvidia_381.09-1~svn1_i386.deb
+Size: 171520
+MD5sum: 54c99d895cd08840cafbc038f52e6c2e
+SHA1: 2bb5238b0ad61dd97ca24d83e0fd7efb8d05edfd
+SHA256: 28f6beed12ac4dc4b106b36bdbe8d0a4c6e9b9e3bb8681b7d22f108caccbf234
+Section: non-free/oldlibs
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x library (transitional)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This is a transitional package to aid switching to the GLVND based
+ implementation.
+
+Package: libgles2-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 240
+Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Breaks: libgles2-nvidia (<< 361)
+Replaces: libgles2-nvidia (<< 361)
+Filename: ./libgles2-glvnd-nvidia_378.13-1~svn1_i386.deb
+Size: 180052
+MD5sum: d8114124284986d24350cc82bd323654
+SHA1: 39c1fb7570458739257c7266273f7d2cc95a0b5e
+SHA256: 383cbe8406ddff82bb2d039bbb883c37cfdaa08566e861b4dcc7b6c4b9380898
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x GLVND stub library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the (binary) GLVND libGLESv2.so.2 stub library
+ provided by NVIDIA which dispatches to vendor implementations
+ (libGLESv2_*.so.2) via GLVND.
 
 Package: libgles2-glvnd-nvidia
 Source: nvidia-graphics-drivers
@@ -750,18 +1500,18 @@ Description: NVIDIA binary OpenGL|ES 2.x GLVND stub library
 
 Package: libgles2-glvnd-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 240
-Depends: nvidia-alternative (= 378.13-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Installed-Size: 242
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361)
 Breaks: libgles2-nvidia (<< 361)
 Replaces: libgles2-nvidia (<< 361)
-Filename: ./libgles2-glvnd-nvidia_378.13-1~svn1_i386.deb
-Size: 180052
-MD5sum: d8114124284986d24350cc82bd323654
-SHA1: 39c1fb7570458739257c7266273f7d2cc95a0b5e
-SHA256: 383cbe8406ddff82bb2d039bbb883c37cfdaa08566e861b4dcc7b6c4b9380898
+Filename: ./libgles2-glvnd-nvidia_381.09-1~svn1_i386.deb
+Size: 181810
+MD5sum: 30938de532f05794606973c1c7dd3853
+SHA1: 1f11d22a99e996e8bca3a0c4bdd4dcf09d7bbcf0
+SHA256: b3885ad039ca31d5bb8fa61ea87e916bfcee868a60b759c75a5fb6fedb6e7cd0
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -782,6 +1532,69 @@ Description: NVIDIA binary OpenGL|ES 2.x GLVND stub library
  This package contains the (binary) GLVND libGLESv2.so.2 stub library
  provided by NVIDIA which dispatches to vendor implementations
  (libGLESv2_*.so.2) via GLVND.
+
+Package: libgles2-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 251
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Breaks: libgles2-nvidia (<< 361)
+Replaces: libgles2-nvidia (<< 361)
+Filename: ./libgles2-glvnd-nvidia_381.09-1~svn1_amd64.deb
+Size: 182300
+MD5sum: 8b876b2fdba6146a74303c4a752f1db1
+SHA1: 06070a81bfba88f1ff0adc5153a47c894e305712
+SHA256: 2a47181a92f62e1c663d7984d30a68c9f37a7413fd8a26d56bb28c0dff5619e2
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x GLVND stub library
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the (binary) GLVND libGLESv2.so.2 stub library
+ provided by NVIDIA which dispatches to vendor implementations
+ (libGLESv2_*.so.2) via GLVND.
+
+Package: libgles2-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 182
+Depends: libgles-nvidia2 (= 378.13-1~svn1)
+Filename: ./libgles2-nvidia_378.13-1~svn1_amd64.deb
+Size: 169788
+MD5sum: 6519562c0f3e7c90c8550373c6f605f6
+SHA1: b9a9336f44bd09cb4aa0647086d23f7382e448c2
+SHA256: 3202e6d37889acb196d4e015c3e5e091913ca7a80975410bd580b289f153d554
+Section: non-free/oldlibs
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x library (transitional)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This is a transitional package to aid switching to the GLVND based
+ implementation.
 
 Package: libgles2-nvidia
 Source: nvidia-graphics-drivers
@@ -813,16 +1626,44 @@ Description: NVIDIA binary OpenGL|ES 2.x library (transitional)
 
 Package: libgles2-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: libgles-nvidia2 (= 381.09-1~svn1)
+Filename: ./libgles2-nvidia_381.09-1~svn1_i386.deb
+Size: 171546
+MD5sum: 029a8464f7b05986de0a343e3fea0025
+SHA1: bbe8b87028abd49bda0ad4719676c6b951f58ff4
+SHA256: 29ed5960a5db28799ccf324297ad30c84a2b69637daf93af967bafc7e5ddac74
+Section: non-free/oldlibs
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x library (transitional)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This is a transitional package to aid switching to the GLVND based
+ implementation.
+
+Package: libgles2-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 182
-Depends: libgles-nvidia2 (= 378.13-1~svn1)
-Filename: ./libgles2-nvidia_378.13-1~svn1_amd64.deb
-Size: 169788
-MD5sum: 6519562c0f3e7c90c8550373c6f605f6
-SHA1: b9a9336f44bd09cb4aa0647086d23f7382e448c2
-SHA256: 3202e6d37889acb196d4e015c3e5e091913ca7a80975410bd580b289f153d554
+Installed-Size: 184
+Depends: libgles-nvidia2 (= 381.09-1~svn1)
+Filename: ./libgles2-nvidia_381.09-1~svn1_amd64.deb
+Size: 171546
+MD5sum: 1628302781093a6909ae48135fb06341
+SHA1: 22e71235fb7dfbf88354e3123bcec0072adbe3a2
+SHA256: 1e0f123d94b9dc38530de1da93d4b59826b0fa9c68395cfd0d8f844ec5d82507
 Section: non-free/oldlibs
 Priority: extra
 Multi-Arch: same
@@ -893,6 +1734,60 @@ Description: NVIDIA binary GLX library
  This package contains the driver specific binary GLX implementation by NVIDIA
  that is accessed via GLVND.
 
+Package: libglx-nvidia0
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1384
+Depends: nvidia-alternative (= 381.09-1~svn1), libglx0 | libglx0-glvnd-nvidia, libnvidia-glcore (= 381.09-1~svn1), libc6 (>= 2.1.3), libx11-6, libxext6
+Filename: ./libglx-nvidia0_381.09-1~svn1_i386.deb
+Size: 410506
+MD5sum: 55a2e4dbcea2b37da61f42c8a378a2bf
+SHA1: 5cf0215e98e9c9e2f3de10a1b8a52530da2847d3
+SHA256: d570306d377c3fe10a3aab094a37cdb158e04ce0d947842ac8d30d8509dda692
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary GLX library
+ GLX ("OpenGL Extension to the X Window System") provides an interface between
+ OpenGL and the X Window System as well as extensions to OpenGL itself.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary GLX implementation by NVIDIA
+ that is accessed via GLVND.
+
+Package: libglx-nvidia0
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1540
+Depends: nvidia-alternative (= 381.09-1~svn1), libglx0 | libglx0-glvnd-nvidia, libnvidia-glcore (= 381.09-1~svn1), libc6 (>= 2.2.5), libx11-6, libxext6
+Filename: ./libglx-nvidia0_381.09-1~svn1_amd64.deb
+Size: 425108
+MD5sum: 2b645c1d1c35070db0cbb5cd45232d98
+SHA1: d336b8225cbeec3bb8af296bafe6d34d5dedd412
+SHA256: befb13470c9d702f71ea55f1f76defa77d64594007af4bf932363783882951a0
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary GLX library
+ GLX ("OpenGL Extension to the X Window System") provides an interface between
+ OpenGL and the X Window System as well as extensions to OpenGL itself.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary GLX implementation by NVIDIA
+ that is accessed via GLVND.
+
 Package: libglx0-glvnd-nvidia
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -943,6 +1838,82 @@ Description: Vendor neutral GL dispatch library -- libGLX
  This package contains the (binary) GLVND libGLX.so.0 stub library provided by
  NVIDIA which dispatches to vendor implementations (libGLX_*.so.0) via GLVND.
 
+Package: libglx0-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 255
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.1), libgldispatch0 | libgldispatch0-nvidia (>= 375.20), libx11-6, libxext6
+Conflicts: libglx0
+Replaces: libglx0
+Filename: ./libglx0-glvnd-nvidia_381.09-1~svn1_i386.deb
+Size: 194132
+MD5sum: d62d7ad8b22c603f8660f978d99ec31a
+SHA1: 8ce2384fccf893616be8c82d7841141456379958
+SHA256: 4ffb093014c8529980216e4840f325b909e6e412f898bd2aa5ff852ebf844f35
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGLX
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGLX.so.0 stub library provided by
+ NVIDIA which dispatches to vendor implementations (libGLX_*.so.0) via GLVND.
+
+Package: libglx0-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 257
+Depends: nvidia-alternative (= 381.09-1~svn1), glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 375.20), libx11-6, libxext6
+Conflicts: libglx0
+Replaces: libglx0
+Filename: ./libglx0-glvnd-nvidia_381.09-1~svn1_amd64.deb
+Size: 193328
+MD5sum: 4e556ec5ef9c9104e9f87ffd101c2bee
+SHA1: 337275c6126a5e6bb3943babed7f0b2403d6d655
+SHA256: 33963a23b2dd4dac747f2456dd3dc60a0f9fca6c6b71f452e17c701d75bba053
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libGLX
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libGLX.so.0 stub library provided by
+ NVIDIA which dispatches to vendor implementations (libGLX_*.so.0) via GLVND.
+
+Package: libnvcuvid1
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 2568
+Depends: libcuda1 (= 378.13-1~svn1), libc6 (>= 2.1.3), libgl1-mesa-glx | libgl1
+Filename: ./libnvcuvid1_378.13-1~svn1_i386.deb
+Size: 864056
+MD5sum: 2eee9ea845eb8a79de20db7dfd618dd8
+SHA1: 7381893c486b6f54e7df31489369950a9ea51fdb
+SHA256: 09b8f553f20cd0f6a8f0a73e6db5c834ceb1c91820ada32a0d12cfd1fae2d75b
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA CUDA Video Decoder runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ The NVIDIA CUDA Video Decoder (NVCUVID) library provides an interface to
+ hardware video decoding capabilities on NVIDIA GPUs with CUDA.
+ .
+ This package contains the nvcuvid runtime library.
+
 Package: libnvcuvid1
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -971,16 +1942,42 @@ Description: NVIDIA CUDA Video Decoder runtime library
 
 Package: libnvcuvid1
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 2268
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.2.5), libgl1-mesa-glx | libgl1
+Filename: ./libnvcuvid1_381.09-1~svn1_amd64.deb
+Size: 768650
+MD5sum: f7e442cb745bd49150831737d605ed7a
+SHA1: ba6cf388268096c754021a93d4bc3355466eaf19
+SHA256: 97af089e4d81a025080faa848ea30d207f48052ce438aa933d65660652d143db
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA CUDA Video Decoder runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ The NVIDIA CUDA Video Decoder (NVCUVID) library provides an interface to
+ hardware video decoding capabilities on NVIDIA GPUs with CUDA.
+ .
+ This package contains the nvcuvid runtime library.
+
+Package: libnvcuvid1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 2568
-Depends: libcuda1 (= 378.13-1~svn1), libc6 (>= 2.1.3), libgl1-mesa-glx | libgl1
-Filename: ./libnvcuvid1_378.13-1~svn1_i386.deb
-Size: 864056
-MD5sum: 2eee9ea845eb8a79de20db7dfd618dd8
-SHA1: 7381893c486b6f54e7df31489369950a9ea51fdb
-SHA256: 09b8f553f20cd0f6a8f0a73e6db5c834ceb1c91820ada32a0d12cfd1fae2d75b
+Installed-Size: 2456
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.1.3), libgl1-mesa-glx | libgl1
+Filename: ./libnvcuvid1_381.09-1~svn1_i386.deb
+Size: 827088
+MD5sum: 0c5b0952c03a66dd4b0f7c3d0be5d0f5
+SHA1: 74a32ccf0563e1f08b52c90da47453f4e7cb34a7
+SHA256: 3b99ef8e747b73983006ee7f02429ec8665ffa851d9d65f0c1f787a39b2bc563
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1047,6 +2044,83 @@ Description: NVIDIA binary OpenGL/GLX configuration library
  .
  This package contains the libnvidia-cfg.so.1 runtime library.
 
+Package: libnvidia-cfg1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 354
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Breaks: libgl1-nvidia-glx (<< 355.11-5)
+Replaces: libgl1-nvidia-glx (<< 355.11-5)
+Provides: libnvidia-cfg1-any
+Filename: ./libnvidia-cfg1_381.09-1~svn1_amd64.deb
+Size: 226966
+MD5sum: a11d0eb7ad39fba1d9480c8e2672df05
+SHA1: 6530c6a376e7825e8943902139d4e2d5fdfdd4b0
+SHA256: 028ed5bd91dc8651302ee4eb92e3bb89da2b30428898402672758b7965e0a52e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX configuration library
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the libnvidia-cfg.so.1 runtime library.
+
+Package: libnvidia-cfg1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 360
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.1)
+Breaks: libgl1-nvidia-glx (<< 355.11-5)
+Replaces: libgl1-nvidia-glx (<< 355.11-5)
+Provides: libnvidia-cfg1-any
+Filename: ./libnvidia-cfg1_381.09-1~svn1_i386.deb
+Size: 228178
+MD5sum: 5f960e151ee31af258ddb5441e38646b
+SHA1: e858d4f688d6d690a0e806977900b3dd07e0de1f
+SHA256: 13f7f4d524f33bb2b68754b220b0dc36b3cd3d9aed2d918f38ac3627df69fa29
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX configuration library
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the libnvidia-cfg.so.1 runtime library.
+
+Package: libnvidia-compiler
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 47429
+Depends: libc6 (>= 2.2.5)
+Conflicts: libnvidia-compiler-378.13
+Provides: libnvidia-compiler-378.13
+Filename: ./libnvidia-compiler_378.13-1~svn1_amd64.deb
+Size: 11728996
+MD5sum: b4cfbbbb7fc86d33adddc060379d2baf
+SHA1: 5aea222b8718e38e11300be7861643cfb8253c12
+SHA256: fb15c46c07c3a73f79c36af90ce47060d17ade02c63eb45906d89f1815c69563
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA runtime compiler library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime compiler library.
+
 Package: libnvidia-compiler
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1074,18 +2148,18 @@ Description: NVIDIA runtime compiler library
 
 Package: libnvidia-compiler
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 47429
+Installed-Size: 47451
 Depends: libc6 (>= 2.2.5)
-Conflicts: libnvidia-compiler-378.13
-Provides: libnvidia-compiler-378.13
-Filename: ./libnvidia-compiler_378.13-1~svn1_amd64.deb
-Size: 11728996
-MD5sum: b4cfbbbb7fc86d33adddc060379d2baf
-SHA1: 5aea222b8718e38e11300be7861643cfb8253c12
-SHA256: fb15c46c07c3a73f79c36af90ce47060d17ade02c63eb45906d89f1815c69563
+Conflicts: libnvidia-compiler-381.09
+Provides: libnvidia-compiler-381.09
+Filename: ./libnvidia-compiler_381.09-1~svn1_amd64.deb
+Size: 11737128
+MD5sum: c2113115db28a85771e5d4ca770bf12d
+SHA1: 26d9c9875bdaec5a2bc2fe88b26ac17b078c9883
+SHA256: bf806e25d25da94b89649f5b67232f409a6cf2844e430890e34309f0c3c35223
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1096,6 +2170,54 @@ Description: NVIDIA runtime compiler library
  general purpose computation.
  .
  This package contains the runtime compiler library.
+
+Package: libnvidia-compiler
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 48467
+Depends: libc6 (>= 2.3.6-6~)
+Conflicts: libnvidia-compiler-381.09
+Provides: libnvidia-compiler-381.09
+Filename: ./libnvidia-compiler_381.09-1~svn1_i386.deb
+Size: 12252788
+MD5sum: 27c8dcdd79f32267edfe652bb855ba6d
+SHA1: 1871bf93d69f36d5b66f95aafb9fd387853a56c2
+SHA256: c29d4b5fd18aa198f0f85f573bd260b19587f873a602d5dd42a1a186c22e3005
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA runtime compiler library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime compiler library.
+
+Package: libnvidia-egl-wayland1
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 221
+Depends: libc6 (>= 2.2.5), libwayland-client0 (>= 1.3.92), libwayland-server0 (>= 1.2.0)
+Filename: ./libnvidia-egl-wayland1_378.13-1~svn1_amd64.deb
+Size: 181988
+MD5sum: 93ff2e7333be7fa66bdc6b29c4785772
+SHA1: 45016e473b073d6c504fbc6046914fab394944f5
+SHA256: 7547038ba3987931e264c8bc2971b3c33be6fe0c76669e8c22690ebdb0c7cc7c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL wayland libraries
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the private wayland libraries used by the NVIDIA
+ implementation of EGL.
 
 Package: libnvidia-egl-wayland1
 Source: nvidia-graphics-drivers
@@ -1122,16 +2244,16 @@ Description: NVIDIA binary EGL wayland libraries
 
 Package: libnvidia-egl-wayland1
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 221
+Installed-Size: 223
 Depends: libc6 (>= 2.2.5), libwayland-client0 (>= 1.3.92), libwayland-server0 (>= 1.2.0)
-Filename: ./libnvidia-egl-wayland1_378.13-1~svn1_amd64.deb
-Size: 181988
-MD5sum: 93ff2e7333be7fa66bdc6b29c4785772
-SHA1: 45016e473b073d6c504fbc6046914fab394944f5
-SHA256: 7547038ba3987931e264c8bc2971b3c33be6fe0c76669e8c22690ebdb0c7cc7c
+Filename: ./libnvidia-egl-wayland1_381.09-1~svn1_amd64.deb
+Size: 183738
+MD5sum: 0bd8bd3b4f7729d0ce3f91ecb0626079
+SHA1: c630c0acb0f4ca7aeb2c2f7c61bda56777787615
+SHA256: ce321631c51c0e06af60233c8734cfd44367a374d24db462f2c11f7f9bf0990b
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1142,6 +2264,59 @@ Description: NVIDIA binary EGL wayland libraries
  .
  This package contains the private wayland libraries used by the NVIDIA
  implementation of EGL.
+
+Package: libnvidia-egl-wayland1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 219
+Depends: libc6 (>= 2.3.6-6~), libwayland-client0 (>= 1.3.92), libwayland-server0 (>= 1.2.0)
+Filename: ./libnvidia-egl-wayland1_381.09-1~svn1_i386.deb
+Size: 182976
+MD5sum: 0640c9f1f15a4e4f3ca5a81df47fed97
+SHA1: dfd2bd9112d4098761ed5d185ccd57eb66bb8919
+SHA256: 4e7d066367cb0da1ecd1945751bbbc2e9f87064acafbf58ea6553c80e9d4b378
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL wayland libraries
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the private wayland libraries used by the NVIDIA
+ implementation of EGL.
+
+Package: libnvidia-eglcore
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 29389
+Depends: libc6 (>= 2.3.6-6~)
+Conflicts: libnvidia-eglcore-378.13
+Provides: libnvidia-eglcore-378.13
+Filename: ./libnvidia-eglcore_378.13-1~svn1_i386.deb
+Size: 6766720
+MD5sum: e6be986bc4f6d82b387d07312a5b0d09
+SHA1: 14577564b1441ce68b74829d7f9a15d972c6c748
+SHA256: 2a4ecff4424771917b504fe6074ef360871ba5f3b70c7d6d177a71e9b9a485b8
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL core libraries
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of EGL and OpenGL|ES.
 
 Package: libnvidia-eglcore
 Source: nvidia-graphics-drivers
@@ -1175,18 +2350,48 @@ Description: NVIDIA binary EGL core libraries
 
 Package: libnvidia-eglcore
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 28096
+Depends: libc6 (>= 2.2.5)
+Conflicts: libnvidia-eglcore-381.09
+Provides: libnvidia-eglcore-381.09
+Filename: ./libnvidia-eglcore_381.09-1~svn1_amd64.deb
+Size: 6469344
+MD5sum: 94815f41eb5371a8e39595626372ad53
+SHA1: edd569a6edf5d53504cb041c12f8762ab0cab958
+SHA256: fb789e80ef20498e678cc982fbd6cf860ef0307cc0694b03eb0d2147eae0f176
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL core libraries
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of EGL and OpenGL|ES.
+
+Package: libnvidia-eglcore
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 29389
+Installed-Size: 29977
 Depends: libc6 (>= 2.3.6-6~)
-Conflicts: libnvidia-eglcore-378.13
-Provides: libnvidia-eglcore-378.13
-Filename: ./libnvidia-eglcore_378.13-1~svn1_i386.deb
-Size: 6766720
-MD5sum: e6be986bc4f6d82b387d07312a5b0d09
-SHA1: 14577564b1441ce68b74829d7f9a15d972c6c748
-SHA256: 2a4ecff4424771917b504fe6074ef360871ba5f3b70c7d6d177a71e9b9a485b8
+Conflicts: libnvidia-eglcore-381.09
+Provides: libnvidia-eglcore-381.09
+Filename: ./libnvidia-eglcore_381.09-1~svn1_i386.deb
+Size: 6857692
+MD5sum: cc5460e0297841d6da4bef043ffe421c
+SHA1: d3b0df26cb808a89a17f01a43896bd01c89176bf
+SHA256: 7aedfa01ae31f56b356a11313f5a76a755daa1d80c8a111e5e2d2d59f5bfb7d4
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1247,6 +2452,50 @@ Description: NVENC Video Encoding runtime library
  .
  This package contains the nvidia-encode runtime library.
 
+Package: libnvidia-encode1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 363
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.2.5), libnvcuvid1 (>= 260)
+Filename: ./libnvidia-encode1_381.09-1~svn1_amd64.deb
+Size: 218318
+MD5sum: e0104e2773c9d334f496f3471648dd3a
+SHA1: 4961fd25ae5faa669d746926348ada38175a3e1e
+SHA256: 2415cc4275ecf5cef2330ba685ad7a6cd2b6556d1cca1129af8dc41e26d51fe3
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVENC Video Encoding runtime library
+ The NVENC Video Encoding library provides an interface to video encoder
+ hardware on supported NVIDIA GPUs.
+ .
+ This package contains the nvidia-encode runtime library.
+
+Package: libnvidia-encode1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 357
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.1.3), libnvcuvid1 (>= 260)
+Filename: ./libnvidia-encode1_381.09-1~svn1_i386.deb
+Size: 219018
+MD5sum: c8748cc9ede4ac061b0f2e8dd522016c
+SHA1: 973466317e1815742e8fe07d27ab17f507557a92
+SHA256: 9b6e0cca226c3847e10ef2cecb3e816cc6579130c2671ba2e4f9a8ec7fec3ee2
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVENC Video Encoding runtime library
+ The NVENC Video Encoding library provides an interface to video encoder
+ hardware on supported NVIDIA GPUs.
+ .
+ This package contains the nvidia-encode runtime library.
+
 Package: libnvidia-fatbinaryloader
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1282,6 +2531,52 @@ Size: 296064
 MD5sum: e629342d398b1bc4c0fe14589d5d20bd
 SHA1: 6e8d9e5151e9af89d8d2b86844466192e0d4464a
 SHA256: 37438a368ea406c10d0f1245451f85dd305cf1084c3a1a715c45d394fd992da6
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA FAT binary loader
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the FAT multiarchitecture binary loader.
+
+Package: libnvidia-fatbinaryloader
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 499
+Depends: libnvidia-ptxjitcompiler (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Filename: ./libnvidia-fatbinaryloader_381.09-1~svn1_amd64.deb
+Size: 298240
+MD5sum: db68f7ada747c0e97a4a04e4e0d2c3cd
+SHA1: 7da725481d03e1361867cb66ebf9fffcc479853c
+SHA256: 129881f81dfb36ef8b3b261a22a10caf6ea4c1cf45363d4e8100807cb9bc0a17
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA FAT binary loader
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the FAT multiarchitecture binary loader.
+
+Package: libnvidia-fatbinaryloader
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 512
+Depends: libnvidia-ptxjitcompiler (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Filename: ./libnvidia-fatbinaryloader_381.09-1~svn1_i386.deb
+Size: 302670
+MD5sum: 1b321f1a88cff81af6b298aeea5d25e2
+SHA1: ee05d8b90e0c38693dfbf422cf468e825d404fd0
+SHA256: ef98fa715553aba436a5fdeaf5fad609160de05673d53d09e334b359a12724b8
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1341,6 +2636,82 @@ Description: NVIDIA OpenGL-based Framebuffer Capture runtime library
  .
  This package contains the NvFBCOpenGL runtime library.
 
+Package: libnvidia-fbc1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 283
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.3.6-6~), libgl1-mesa-glx | libgl1, libx11-6, libxext6
+Filename: ./libnvidia-fbc1_381.09-1~svn1_i386.deb
+Size: 198090
+MD5sum: a1182a8b50932eef5ea3219c4a815a01
+SHA1: 2636528594dff30f4d529955151a8f600f7fd7ea
+SHA256: 72ab747e41e17cffedbbd6128de191195e4cef0377755048ba16b57e05bca927
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Framebuffer Capture runtime library
+ The NVIDIA OpenGL-based Framebuffer Capture (NvFBCOpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvFBCOpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvFBCOpenGL runtime library.
+
+Package: libnvidia-fbc1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 293
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.2.5), libgl1-mesa-glx | libgl1, libx11-6, libxext6
+Filename: ./libnvidia-fbc1_381.09-1~svn1_amd64.deb
+Size: 200446
+MD5sum: 29cdc0a2ba120ba8ef62b451dba4fbbb
+SHA1: 56745c76c55805c6cc0cba97acfbe4505634daa6
+SHA256: 53af9b9b9007fc821251bedb6b0e8c10cce0000ed36da1b9d5c2d78b1ed87d4f
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Framebuffer Capture runtime library
+ The NVIDIA OpenGL-based Framebuffer Capture (NvFBCOpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvFBCOpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvFBCOpenGL runtime library.
+
+Package: libnvidia-glcore
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 28755
+Depends: libc6 (>= 2.2.5)
+Conflicts: libgl1-nvidia-glx-378.13, libnvidia-glcore-378.13
+Breaks: libgl1-nvidia-glx (<< 355.11-5)
+Replaces: libgl1-nvidia-glx (<< 355.11-5)
+Provides: libnvidia-glcore-378.13
+Filename: ./libnvidia-glcore_378.13-1~svn1_amd64.deb
+Size: 6465350
+MD5sum: 44e17f2774e35d6b912391c958503b9f
+SHA1: 2d197d499eb5146a1efb48b199ddb70aea6ae238
+SHA256: 408c0cc2e650ce8f2589bbc6e215735dd9fbac51ce6cae0fce7d6826947b0d16
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX core libraries
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of OpenGL and GLX.
+
 Package: libnvidia-glcore
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1371,20 +2742,48 @@ Description: NVIDIA binary OpenGL/GLX core libraries
 
 Package: libnvidia-glcore
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 28755
-Depends: libc6 (>= 2.2.5)
-Conflicts: libgl1-nvidia-glx-378.13, libnvidia-glcore-378.13
+Installed-Size: 32602
+Depends: libc6 (>= 2.1.3)
+Conflicts: libgl1-nvidia-glx-381.09, libnvidia-glcore-381.09
 Breaks: libgl1-nvidia-glx (<< 355.11-5)
 Replaces: libgl1-nvidia-glx (<< 355.11-5)
-Provides: libnvidia-glcore-378.13
-Filename: ./libnvidia-glcore_378.13-1~svn1_amd64.deb
-Size: 6465350
-MD5sum: 44e17f2774e35d6b912391c958503b9f
-SHA1: 2d197d499eb5146a1efb48b199ddb70aea6ae238
-SHA256: 408c0cc2e650ce8f2589bbc6e215735dd9fbac51ce6cae0fce7d6826947b0d16
+Provides: libnvidia-glcore-381.09
+Filename: ./libnvidia-glcore_381.09-1~svn1_i386.deb
+Size: 6972968
+MD5sum: be7d8e0a4934eef4641ddac8c279b1e1
+SHA1: b9a2e99f633dbfbaba0a9c2ad080f54cb10b5a01
+SHA256: 696ad33c5b7e095117e28ceceae7985ef7e514a73795d3c7748fc374b158acfc
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX core libraries
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of OpenGL and GLX.
+
+Package: libnvidia-glcore
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 29328
+Depends: libc6 (>= 2.2.5)
+Conflicts: libgl1-nvidia-glx-381.09, libnvidia-glcore-381.09
+Breaks: libgl1-nvidia-glx (<< 355.11-5)
+Replaces: libgl1-nvidia-glx (<< 355.11-5)
+Provides: libnvidia-glcore-381.09
+Filename: ./libnvidia-glcore_381.09-1~svn1_amd64.deb
+Size: 6534960
+MD5sum: 5adb4de2fde7cf54aac134f45c71774a
+SHA1: 86e7839029cf598fc38d71641751f1851f9a58c6
+SHA256: 31c7b3f0a838d1648ff140fc9007a6ddb7d33780bcce273cbe58d441286f07a8
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1445,6 +2844,77 @@ Description: NVIDIA OpenGL-based Inband Frame Readback runtime library
  .
  This package contains the NvIFROpenGL runtime library.
 
+Package: libnvidia-ifr1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 384
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.3.6-6~), libgl1-mesa-glx | libgl1, libx11-6
+Filename: ./libnvidia-ifr1_381.09-1~svn1_i386.deb
+Size: 225700
+MD5sum: 1ef32c96284d76cc1fa810756f4ec434
+SHA1: c432d95cbf72d82cbcaff8687061dea7dfb40e5f
+SHA256: 33fdfc4c8df382dcc9d9569ca8d5ccdb4dd1eecc1ba45d695c6b893b8431ba71
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Inband Frame Readback runtime library
+ The NVIDIA OpenGL-based Inband Frame Readback (NvIFROpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvIFROpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvIFROpenGL runtime library.
+
+Package: libnvidia-ifr1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 400
+Depends: libcuda1 (= 381.09-1~svn1), libc6 (>= 2.2.5), libgl1-mesa-glx | libgl1, libx11-6
+Filename: ./libnvidia-ifr1_381.09-1~svn1_amd64.deb
+Size: 233474
+MD5sum: 31bb2b1839cc1f88369a00e43dc1ec85
+SHA1: bb3f6f6f65394575d569bf7578743dd850a5beb7
+SHA256: 08546c5926df175d63df87a171802b75083a826eb45c0df0be7d4186eceb468a
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Inband Frame Readback runtime library
+ The NVIDIA OpenGL-based Inband Frame Readback (NvIFROpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvIFROpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvIFROpenGL runtime library.
+
+Package: libnvidia-ml1
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1372
+Depends: nvidia-alternative (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
+Breaks: nvidia-smi (<< 378.13)
+Filename: ./libnvidia-ml1_378.13-1~svn1_i386.deb
+Size: 500144
+MD5sum: 31c17a72d3501f0e279c6c79e1103475
+SHA1: 7d4e8a673d3b92adc9cffa16fd63293bc16c8656
+SHA256: b5d78b07d1ccaf3b9cacb364a47e05de65ce743ccace5c9c47defee8c813e436
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://developer.nvidia.com/nvidia-management-library-NVML
+Description: NVIDIA Management Library (NVML) runtime library
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ It provides a direct access to the queries and commands exposed via nvidia-smi.
+ .
+ This package contains the nvidia-ml runtime library.
+
 Package: libnvidia-ml1
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1470,17 +2940,17 @@ Description: NVIDIA Management Library (NVML) runtime library
 
 Package: libnvidia-ml1
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 1372
-Depends: nvidia-alternative (= 378.13-1~svn1), libc6 (>= 2.3.6-6~)
-Breaks: nvidia-smi (<< 378.13)
-Filename: ./libnvidia-ml1_378.13-1~svn1_i386.deb
-Size: 500144
-MD5sum: 31c17a72d3501f0e279c6c79e1103475
-SHA1: 7d4e8a673d3b92adc9cffa16fd63293bc16c8656
-SHA256: b5d78b07d1ccaf3b9cacb364a47e05de65ce743ccace5c9c47defee8c813e436
+Installed-Size: 1423
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Breaks: nvidia-smi (<< 381.09)
+Filename: ./libnvidia-ml1_381.09-1~svn1_i386.deb
+Size: 513480
+MD5sum: 9db52e372fceeee70949869c0b83a198
+SHA1: 700c82d4cb8159caffab6ece3ad44de8368db06f
+SHA256: eabaf1cd8cc4f77ef82b7636a784fcfc4914daf46ef649fd886afa819f99cac9
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1490,6 +2960,52 @@ Description: NVIDIA Management Library (NVML) runtime library
  It provides a direct access to the queries and commands exposed via nvidia-smi.
  .
  This package contains the nvidia-ml runtime library.
+
+Package: libnvidia-ml1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1411
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Breaks: nvidia-smi (<< 381.09)
+Filename: ./libnvidia-ml1_381.09-1~svn1_amd64.deb
+Size: 550974
+MD5sum: 2d672f208396c3a2b1763335810c084c
+SHA1: 7c1b954b3a7986e83aca2bf57157de53fc469be3
+SHA256: 1593e6d1fecd03aa33396e45a1a3fbe66ae7c59aee5481f36dd17e7a4f55cd3c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://developer.nvidia.com/nvidia-management-library-NVML
+Description: NVIDIA Management Library (NVML) runtime library
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ It provides a direct access to the queries and commands exposed via nvidia-smi.
+ .
+ This package contains the nvidia-ml runtime library.
+
+Package: libnvidia-ptxjitcompiler
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 9535
+Depends: libc6 (>= 2.3.6-6~)
+Filename: ./libnvidia-ptxjitcompiler_378.13-1~svn1_i386.deb
+Size: 3287954
+MD5sum: 43f42628f5cd199125d5e691a31370eb
+SHA1: 9c8b0e6be50209c8b6a6bfea58055761b10a3dc6
+SHA256: f55276cb81865735ea7096f29bfb55da766c7c80059ba38d0d9972c45fd06f83
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA PTX JIT Compiler
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime PTX JIT compiler library.
 
 Package: libnvidia-ptxjitcompiler
 Source: nvidia-graphics-drivers
@@ -1516,16 +3032,39 @@ Description: NVIDIA PTX JIT Compiler
 
 Package: libnvidia-ptxjitcompiler
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 9256
+Depends: libc6 (>= 2.2.5)
+Filename: ./libnvidia-ptxjitcompiler_381.09-1~svn1_amd64.deb
+Size: 3219292
+MD5sum: fba03f8e43919d56592ee54078d80c81
+SHA1: 8df6d85dd03d760b057fe61f0cc29fb27f63535c
+SHA256: c88948fee2578944358c74e95b3f027675e7e53bd663567822952cbaff81a980
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA PTX JIT Compiler
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime PTX JIT compiler library.
+
+Package: libnvidia-ptxjitcompiler
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 9535
+Installed-Size: 9579
 Depends: libc6 (>= 2.3.6-6~)
-Filename: ./libnvidia-ptxjitcompiler_378.13-1~svn1_i386.deb
-Size: 3287954
-MD5sum: 43f42628f5cd199125d5e691a31370eb
-SHA1: 9c8b0e6be50209c8b6a6bfea58055761b10a3dc6
-SHA256: f55276cb81865735ea7096f29bfb55da766c7c80059ba38d0d9972c45fd06f83
+Filename: ./libnvidia-ptxjitcompiler_381.09-1~svn1_i386.deb
+Size: 3303612
+MD5sum: c4155d98472a61da26497d194a3486a5
+SHA1: 4b96f67efb503c40ffcb9373af42324d884c05b9
+SHA256: ff37fecbd9b4d8a3de315c27cb5f573a4a8889d339ecdab8e25e4ddd790aad47
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1576,6 +3115,56 @@ Size: 193612
 MD5sum: 57cd638908b677f16f4a16814dd27014
 SHA1: aee4aaaf8475e4430794773b2975940aa8eaa531
 SHA256: d0930e52aa4b121e7539bf485a837207823fabb60ccb2173b86faf169d872038
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libOpenGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libOpenGL.so.0 stub library provided
+ by NVIDIA which dispatches to vendor implementations via GLVND.
+
+Package: libopengl0-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 358
+Depends: glvnd-nvidia-abi-375.20, libc6 (>= 2.0), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Conflicts: libopengl0
+Replaces: libopengl0
+Filename: ./libopengl0-glvnd-nvidia_381.09-1~svn1_i386.deb
+Size: 195402
+MD5sum: b01a1c3a97fa2b14b763570d422b82c3
+SHA1: 4c8cbe77d2ffbf162f68126efc3114ce4dd523bc
+SHA256: 2ac09c391290ccdb897e2f2ba0f4ed9e80a5967d5aa5962abec507f3caebcd75
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Vendor neutral GL dispatch library -- libOpenGL
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package contains the (binary) GLVND libOpenGL.so.0 stub library provided
+ by NVIDIA which dispatches to vendor implementations via GLVND.
+
+Package: libopengl0-glvnd-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 400
+Depends: glvnd-nvidia-abi-375.20, libc6 (>= 2.2.5), libgldispatch0 | libgldispatch0-nvidia (>= 361)
+Conflicts: libopengl0
+Replaces: libopengl0
+Filename: ./libopengl0-glvnd-nvidia_381.09-1~svn1_amd64.deb
+Size: 197874
+MD5sum: 7c72b918393229b105fe3387433e967a
+SHA1: 288f5d37e87301ef34bd6cd8dd01a7faf37ad81d
+SHA256: 82858bf07fb120f6ad95eb8a1a0252367964207a3ebdb44c7f2c62a8f3bb61ea
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1647,6 +3236,93 @@ Description: allows the selection of NVIDIA as GLX provider
  In order to install the NVIDIA driver and libraries, install the
  nvidia-driver package instead.
 
+Package: nvidia-alternative
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 209
+Pre-Depends: nvidia-legacy-check (>= 343)
+Depends: glx-alternative-nvidia (>= 0.7)
+Breaks: libcuda1 (<< 352.63), libnvcuvid1 (<< 340.46-2~), libnvidia-encode1 (<< 340.46-2~), libnvidia-fbc1 (<< 340.46-2~), libnvidia-ifr1 (<< 340.46-2~), libnvidia-ml1 (<< 340.46-2~), nvidia-driver (<< 343.22-2~), nvidia-opencl-icd (<< 340.46-2~), nvidia-settings (<< 319.49), nvidia-smi (<< 340.46-2~), nvidia-vdpau-driver (<< 340.46-2~)
+Provides: nvidia-alternative--kmod-alias
+Filename: ./nvidia-alternative_381.09-1~svn1_i386.deb
+Size: 173326
+MD5sum: ff38ddf034b665baa38b7840aa801441
+SHA1: a2898d1ecff407a82b94697d111e26e8ce95f27d
+SHA256: 1e3fabc9982f980e87e663f8ff2e62154706a0fb60dc706cb13f8400d0c43aa0
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ .
+ Use 'update-glx --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-driver package instead.
+
+Package: nvidia-alternative
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 209
+Pre-Depends: nvidia-legacy-check (>= 343)
+Depends: glx-alternative-nvidia (>= 0.7)
+Breaks: libcuda1 (<< 352.63), libnvcuvid1 (<< 340.46-2~), libnvidia-encode1 (<< 340.46-2~), libnvidia-fbc1 (<< 340.46-2~), libnvidia-ifr1 (<< 340.46-2~), libnvidia-ml1 (<< 340.46-2~), nvidia-driver (<< 343.22-2~), nvidia-opencl-icd (<< 340.46-2~), nvidia-settings (<< 319.49), nvidia-smi (<< 340.46-2~), nvidia-vdpau-driver (<< 340.46-2~)
+Provides: nvidia-alternative--kmod-alias
+Filename: ./nvidia-alternative_381.09-1~svn1_amd64.deb
+Size: 173332
+MD5sum: b60884bc80b8a43354ef22ba2646c83d
+SHA1: f11046da4501f2cdeb6aff4dd0c03b547f87b7ab
+SHA256: 6713e295a782635ea9cd570bedc2ebcb86f7c602067379adc203f18534c03ffe
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ .
+ Use 'update-glx --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-driver package instead.
+
+Package: nvidia-cuda-mps
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 302
+Depends: libc6 (>= 2.2.5)
+Filename: ./nvidia-cuda-mps_378.13-1~svn1_amd64.deb
+Size: 198278
+MD5sum: 12e02e732b6328ba2e8d0b653322230a
+SHA1: ce761189b399d6e490f71c0db7b3d77e769d2b9c
+SHA256: 1df8628fce64056d4e9f1ca1a37855c64c8c73de427955832b38657512c9bbe1
+Section: non-free/utils
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA CUDA Multi Process Service (MPS)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ CUDA MPS is a feature that allows multiple CUDA processes to share a single
+ GPU context. CUDA MPS should be transparent to CUDA programs.
+ .
+ CUDA MPS requires a device that supports Unified Virtual Address (UVA) and
+ has compute capability SM 3.5 or higher.
+ Pre-CUDA 4.0 APIs are not supported under CUDA MPS.
+
 Package: nvidia-cuda-mps
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1676,16 +3352,43 @@ Description: NVIDIA CUDA Multi Process Service (MPS)
 
 Package: nvidia-cuda-mps
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 302
+Installed-Size: 304
 Depends: libc6 (>= 2.2.5)
-Filename: ./nvidia-cuda-mps_378.13-1~svn1_amd64.deb
-Size: 198278
-MD5sum: 12e02e732b6328ba2e8d0b653322230a
-SHA1: ce761189b399d6e490f71c0db7b3d77e769d2b9c
-SHA256: 1df8628fce64056d4e9f1ca1a37855c64c8c73de427955832b38657512c9bbe1
+Filename: ./nvidia-cuda-mps_381.09-1~svn1_amd64.deb
+Size: 200024
+MD5sum: 8a6ba1b28eaa0b4390379bcf1c2cb199
+SHA1: 381880d11e0e82c1280d37e1f832b3dbbe26c74d
+SHA256: b7f6f3b6e6a1a15093b926330485d3f324bbeb2396108d7dec09e032d5355977
+Section: non-free/utils
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA CUDA Multi Process Service (MPS)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ CUDA MPS is a feature that allows multiple CUDA processes to share a single
+ GPU context. CUDA MPS should be transparent to CUDA programs.
+ .
+ CUDA MPS requires a device that supports Unified Virtual Address (UVA) and
+ has compute capability SM 3.5 or higher.
+ Pre-CUDA 4.0 APIs are not supported under CUDA MPS.
+
+Package: nvidia-cuda-mps
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 305
+Depends: libc6 (>= 2.3.6-6~)
+Filename: ./nvidia-cuda-mps_381.09-1~svn1_i386.deb
+Size: 202662
+MD5sum: 0dee5d67f11f85848c0b8c6cb13ad532
+SHA1: 426d570ebc8251a969dc800a960d5da7681c1793
+SHA256: 7a0fe38e47e4fb145f3c344615b4ab06affcf0f3dbb9f855f23fd201c07f2691
 Section: non-free/utils
 Priority: optional
 Homepage: http://www.nvidia.com
@@ -1734,6 +3437,48 @@ Size: 172738
 MD5sum: 6073de8a083ee9b138ad953ddc0c20a1
 SHA1: 1f24ff3fc04a434ecfecac8884479f8824682fee
 SHA256: b3d2d8afc6002ff895ae76efc56e03f1b50aa377f91490886daf592d87681039
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA GPU detection utility
+ The 'nvidia-detect' script in this package checks for an NVIDIA GPU in the
+ system and recommends one of the non-free accelerated driver meta-packages
+ (nvidia-driver, nvidia-legacy-340xx-driver, or nvidia-legacy-304xx-driver)
+ for installation.
+
+Package: nvidia-detect
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 215
+Depends: pciutils
+Filename: ./nvidia-detect_381.09-1~svn1_i386.deb
+Size: 174462
+MD5sum: 10822f244663848300683d60cb1a6771
+SHA1: a3fd35530091451ed88fcc216516844ac7cf1a23
+SHA256: e8575eeb76ac9b06ffff4971bb7f40c72fc66907daecd7acc4605f687b3e290b
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA GPU detection utility
+ The 'nvidia-detect' script in this package checks for an NVIDIA GPU in the
+ system and recommends one of the non-free accelerated driver meta-packages
+ (nvidia-driver, nvidia-legacy-340xx-driver, or nvidia-legacy-304xx-driver)
+ for installation.
+
+Package: nvidia-detect
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 215
+Depends: pciutils
+Filename: ./nvidia-detect_381.09-1~svn1_amd64.deb
+Size: 174462
+MD5sum: d52077076d9a0e68131082a6a394743b
+SHA1: ee830815ca47a5fb4f5dd00b3c14e46494398ed3
+SHA256: 8371597cb3199f50e2f16d86e6adbf8969181e5ecea3c2f27f0c36ba7f1c6627
 Section: non-free/x11
 Priority: optional
 Homepage: http://www.nvidia.com
@@ -1823,6 +3568,86 @@ Description: NVIDIA metapackage
  .
  Building the kernel module has been tested up to Linux 4.9.
 
+Package: nvidia-driver
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1145
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: nvidia-driver-libs (= 381.09-1~svn1), nvidia-driver-bin (= 381.09-1~svn1), xserver-xorg-video-nvidia (= 381.09-1~svn1), nvidia-vdpau-driver (= 381.09-1~svn1), nvidia-alternative (= 381.09-1~svn1), nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-support
+Recommends: nvidia-settings (>= 381), nvidia-persistenced
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Breaks: nvidia-glx
+Replaces: nvidia-glx
+Provides: nvidia-glx-any
+Filename: ./nvidia-driver_381.09-1~svn1_i386.deb
+Size: 466352
+MD5sum: 38fb4557880d1628351fd7a208c29ea9
+SHA1: 6847962a4f4f278535844ed583342986a5710a7d
+SHA256: 8d448cfcc5fb935b4b83abce35061c05745eb1f774e6073b73ed4c2e08590fdb
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA metapackage
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES/Vulkan applications via a direct-rendering X Server.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
+Package: nvidia-driver
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1145
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: nvidia-driver-libs (= 381.09-1~svn1), nvidia-driver-bin (= 381.09-1~svn1), xserver-xorg-video-nvidia (= 381.09-1~svn1), nvidia-vdpau-driver (= 381.09-1~svn1), nvidia-alternative (= 381.09-1~svn1), nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-support
+Recommends: nvidia-settings (>= 381), nvidia-persistenced
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Breaks: nvidia-glx
+Replaces: nvidia-glx
+Provides: nvidia-glx-any
+Filename: ./nvidia-driver_381.09-1~svn1_amd64.deb
+Size: 466400
+MD5sum: 25fa839a3c6ec9a7a732ec1081ff6055
+SHA1: 0c3a7b4c55d34055d9a7076a32eecf46cab033b8
+SHA256: a971f49750b1c1bec2ba38e64533c2268ee4d82090d4c4e18c5f13ebbab3f1e0
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA metapackage
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES/Vulkan applications via a direct-rendering X Server.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
 Package: nvidia-driver-bin
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1877,6 +3702,82 @@ Description: NVIDIA driver support binaries
  .
  This package contains supporting binaries for the driver.
 
+Package: nvidia-driver-bin
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 413
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.1), libnvidia-ml1 (>= 319)
+Recommends: nvidia-driver
+Conflicts: nvidia-driver-bin-381.09
+Breaks: nvidia-driver (<< 343.22-2~), nvidia-glx (<< 319)
+Replaces: nvidia-driver (<< 343.22-2~), nvidia-glx (<< 319)
+Provides: nvidia-driver-bin-381.09
+Filename: ./nvidia-driver-bin_381.09-1~svn1_i386.deb
+Size: 252868
+MD5sum: d6d00ef568961dc3bbd84d5628437f0c
+SHA1: 34cc0b5566db71b5a988825740eb8126d0f1f318
+SHA256: bb3dad0e46c68a1cf5b81bf42d6e62203d123a66abcf0c37dedee9d8de6ba339
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA driver support binaries
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains supporting binaries for the driver.
+
+Package: nvidia-driver-bin
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 448
+Depends: nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.2.5), libnvidia-ml1 (>= 319)
+Recommends: nvidia-driver
+Conflicts: nvidia-driver-bin-381.09
+Breaks: nvidia-driver (<< 343.22-2~), nvidia-glx (<< 319)
+Replaces: nvidia-driver (<< 343.22-2~), nvidia-glx (<< 319)
+Provides: nvidia-driver-bin-381.09
+Filename: ./nvidia-driver-bin_381.09-1~svn1_amd64.deb
+Size: 255366
+MD5sum: b0278f0a2a75e8fb3bd9610a5461e88d
+SHA1: 699699512d435a4f0dad5c310e5425cd1470d02a
+SHA256: ba0f2eea322aecd9d1e6a1a19c0121a057e0850d09fe8aed9e00dae6316c0b61
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA driver support binaries
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains supporting binaries for the driver.
+
+Package: nvidia-driver-libs
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 182
+Depends: libgl1-nvidia-glvnd-glx (= 378.13-1~svn1) | libgl1-nvidia-glx (= 378.13-1~svn1), nvidia-egl-icd (= 378.13-1~svn1) | libegl1-nvidia (= 378.13-1~svn1), nvidia-egl-wayland-icd (= 378.13-1~svn1)
+Recommends: libopengl0-glvnd-nvidia, libglx-nvidia0 (= 378.13-1~svn1), libgles-nvidia1 (= 378.13-1~svn1), libgles-nvidia2 (= 378.13-1~svn1), libnvidia-cfg1 (= 378.13-1~svn1), nvidia-vulkan-icd (= 378.13-1~svn1)
+Filename: ./nvidia-driver-libs_378.13-1~svn1_i386.deb
+Size: 169724
+MD5sum: 3e43e16ea024254b2d9bbfd5075ab2c8
+SHA1: 358fc9a8494384946ac6e2ec1638c18a90a0e87b
+SHA256: 9b734a969d1f654ccdcbdd57c0c137bfa75a65c69c28ec8ace51ae9f2887897e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES libraries)
+ This metapackage depends on the NVIDIA binary libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server.
+
 Package: nvidia-driver-libs
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1901,17 +3802,39 @@ Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES libraries)
 
 Package: nvidia-driver-libs
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 182
-Depends: libgl1-nvidia-glvnd-glx (= 378.13-1~svn1) | libgl1-nvidia-glx (= 378.13-1~svn1), nvidia-egl-icd (= 378.13-1~svn1) | libegl1-nvidia (= 378.13-1~svn1), nvidia-egl-wayland-icd (= 378.13-1~svn1)
-Recommends: libopengl0-glvnd-nvidia, libglx-nvidia0 (= 378.13-1~svn1), libgles-nvidia1 (= 378.13-1~svn1), libgles-nvidia2 (= 378.13-1~svn1), libnvidia-cfg1 (= 378.13-1~svn1), nvidia-vulkan-icd (= 378.13-1~svn1)
-Filename: ./nvidia-driver-libs_378.13-1~svn1_i386.deb
-Size: 169724
-MD5sum: 3e43e16ea024254b2d9bbfd5075ab2c8
-SHA1: 358fc9a8494384946ac6e2ec1638c18a90a0e87b
-SHA256: 9b734a969d1f654ccdcbdd57c0c137bfa75a65c69c28ec8ace51ae9f2887897e
+Installed-Size: 184
+Depends: libgl1-nvidia-glvnd-glx (= 381.09-1~svn1) | libgl1-nvidia-glx (= 381.09-1~svn1), nvidia-egl-icd (= 381.09-1~svn1) | libegl1-nvidia (= 381.09-1~svn1), nvidia-egl-wayland-icd (= 381.09-1~svn1)
+Recommends: libopengl0-glvnd-nvidia, libglx-nvidia0 (= 381.09-1~svn1), libgles-nvidia1 (= 381.09-1~svn1), libgles-nvidia2 (= 381.09-1~svn1), libnvidia-cfg1 (= 381.09-1~svn1), nvidia-vulkan-icd (= 381.09-1~svn1)
+Filename: ./nvidia-driver-libs_381.09-1~svn1_i386.deb
+Size: 171478
+MD5sum: 128e25677f3341a9fbc0bab1d3389680
+SHA1: c6a8f2ad593214f1d2bd7a01b1ad9c9d37b7c041
+SHA256: 1184e1b61598696e54a400f84b6f83082e29cbaf926142a2951764d7942b75c5
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES libraries)
+ This metapackage depends on the NVIDIA binary libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server.
+
+Package: nvidia-driver-libs
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: libgl1-nvidia-glvnd-glx (= 381.09-1~svn1) | libgl1-nvidia-glx (= 381.09-1~svn1), nvidia-egl-icd (= 381.09-1~svn1) | libegl1-nvidia (= 381.09-1~svn1), nvidia-egl-wayland-icd (= 381.09-1~svn1)
+Recommends: nvidia-driver-libs-i386, libopengl0-glvnd-nvidia, libglx-nvidia0 (= 381.09-1~svn1), libgles-nvidia1 (= 381.09-1~svn1), libgles-nvidia2 (= 381.09-1~svn1), libnvidia-cfg1 (= 381.09-1~svn1), nvidia-vulkan-icd (= 381.09-1~svn1)
+Filename: ./nvidia-driver-libs_381.09-1~svn1_amd64.deb
+Size: 171490
+MD5sum: 47d89ca9da4ba3ba53fbf7d077a8e26f
+SHA1: bbd49aca22708f2df35255ae3b94184be350a946
+SHA256: 305689f447744a86a82e93541a1820b96fdcd4d3a8083adbeb4dcc2a6732c28b
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -1943,6 +3866,51 @@ Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES 32-bit libraries)
  OpenGL/GLX/EGL/GLES libraries when installing nvidia-driver-libs
  on amd64 with foreign architecture i386 enabled.
 
+Package: nvidia-driver-libs-i386
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-driver-libs
+Conflicts: libgl1-nvidia-glx-i386
+Filename: ./nvidia-driver-libs-i386_381.09-1~svn1_i386.deb
+Size: 171378
+MD5sum: 53dbfa7b650bda2e7d1d6e2b8365648c
+SHA1: b5eee4b1249f22a8396926dc5666cef3eac49b30
+SHA256: f3863a6ed7b2c26e52d863ddce0e36a789c7b2badb33b41c94916264aa33b372
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES 32-bit libraries)
+ This metapackage helps the automatic installation of the 32-bit NVIDIA
+ OpenGL/GLX/EGL/GLES libraries when installing nvidia-driver-libs
+ on amd64 with foreign architecture i386 enabled.
+
+Package: nvidia-egl-common
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 188
+Recommends: libegl-nvidia0
+Filename: ./nvidia-egl-common_378.13-1~svn1_amd64.deb
+Size: 170046
+MD5sum: 75d01acd8cd5df41e3233f897edbe8bb
+SHA1: 2c5544a28be9896f5ae0eed99457d8f042a17469
+SHA256: 2d66f92117e3979d4bc03f200fe651fa7ae043223189e5d275f7647f2a4e8774
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL driver - common files
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for EGL via GLVND.
+
 Package: nvidia-egl-common
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -1968,16 +3936,39 @@ Description: NVIDIA binary EGL driver - common files
 
 Package: nvidia-egl-common
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 190
+Recommends: libegl-nvidia0
+Filename: ./nvidia-egl-common_381.09-1~svn1_i386.deb
+Size: 171772
+MD5sum: b2fac8bcc9cbfa48a06cce124d872a98
+SHA1: 8659070e01c5bb05347d7c66e370a058b5ac4a11
+SHA256: 1a98c260ab074888418e6af7f0ce79b098526e24534cbdf7e07d5cdb66967701
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL driver - common files
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for EGL via GLVND.
+
+Package: nvidia-egl-common
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 188
+Installed-Size: 190
 Recommends: libegl-nvidia0
-Filename: ./nvidia-egl-common_378.13-1~svn1_amd64.deb
-Size: 170046
-MD5sum: 75d01acd8cd5df41e3233f897edbe8bb
-SHA1: 2c5544a28be9896f5ae0eed99457d8f042a17469
-SHA256: 2d66f92117e3979d4bc03f200fe651fa7ae043223189e5d275f7647f2a4e8774
+Filename: ./nvidia-egl-common_381.09-1~svn1_amd64.deb
+Size: 171772
+MD5sum: 9eae4e0ae2dd4dff065d0afeedf90b04
+SHA1: e641ada29d14a53d92c725058d11ea111af72b2f
+SHA256: 392842ab39471ac196eb32dfda31abde14a18f6610cec6be7fe117091776dfc4
 Section: non-free/libs
 Priority: optional
 Multi-Arch: foreign
@@ -2039,6 +4030,79 @@ Description: NVIDIA EGL installable client driver (ICD)
  This metapackage provides the NVIDIA installable client driver (ICD) for
  EGL via GLVND which supports NVIDIA GPUs.
 
+Package: nvidia-egl-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-egl-common, libegl1-glvnd | libegl1-glvnd-nvidia, libegl-nvidia0 (= 381.09-1~svn1)
+Enhances: libegl1-glvnd
+Provides: egl-icd
+Filename: ./nvidia-egl-icd_381.09-1~svn1_amd64.deb
+Size: 171464
+MD5sum: 8365290bab7506dfb4f23cda0eb87e15
+SHA1: 332c5202ea581e283e851d94aae3858ee943c95b
+SHA256: a6cbdbeb8f73bc98ce3e1ec176d173e084e512dfd7d57608e646c7dd18e34388
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA EGL installable client driver (ICD)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ EGL via GLVND which supports NVIDIA GPUs.
+
+Package: nvidia-egl-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-egl-common, libegl1-glvnd | libegl1-glvnd-nvidia, libegl-nvidia0 (= 381.09-1~svn1)
+Enhances: libegl1-glvnd
+Provides: egl-icd
+Filename: ./nvidia-egl-icd_381.09-1~svn1_i386.deb
+Size: 171462
+MD5sum: 5e3bb7afca7f69ceaaee1f58a57c1825
+SHA1: 0562243d062b3bde714446d041a3f3da7ef1d3a2
+SHA256: 221a2a4514f68d91e228ea49c7dec87f5d8647cd6ea0aed69c6c2fdcc4ac4743
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA EGL installable client driver (ICD)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ EGL via GLVND which supports NVIDIA GPUs.
+
+Package: nvidia-egl-wayland-common
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 188
+Recommends: libnvidia-egl-wayland1
+Filename: ./nvidia-egl-wayland-common_378.13-1~svn1_i386.deb
+Size: 170060
+MD5sum: d688d2ccc87566151f2ebe247738640a
+SHA1: 90340c041ae7fcfe4309672d4f060ee59f655205
+SHA256: 934928145ba3ad1afe66d67b3b99eec6ad231adf6f1c4ed170547b942080d6df
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL driver - common files
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for Wayland via EGL.
+
 Package: nvidia-egl-wayland-common
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2064,16 +4128,39 @@ Description: NVIDIA binary EGL driver - common files
 
 Package: nvidia-egl-wayland-common
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 188
+Installed-Size: 190
 Recommends: libnvidia-egl-wayland1
-Filename: ./nvidia-egl-wayland-common_378.13-1~svn1_i386.deb
-Size: 170060
-MD5sum: d688d2ccc87566151f2ebe247738640a
-SHA1: 90340c041ae7fcfe4309672d4f060ee59f655205
-SHA256: 934928145ba3ad1afe66d67b3b99eec6ad231adf6f1c4ed170547b942080d6df
+Filename: ./nvidia-egl-wayland-common_381.09-1~svn1_i386.deb
+Size: 171796
+MD5sum: d62a5f5d4948f191d6cd7bb9df46d0ba
+SHA1: f061abcb9f5757470da57fb0e978b4e474b88a7c
+SHA256: d05ace9ae61394f255a79228e1dd69a97ca98bdf8447bb06b6b24a1e4f659136
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary EGL driver - common files
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for Wayland via EGL.
+
+Package: nvidia-egl-wayland-common
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 190
+Recommends: libnvidia-egl-wayland1
+Filename: ./nvidia-egl-wayland-common_381.09-1~svn1_amd64.deb
+Size: 171796
+MD5sum: e99c2571a007aad05ca85b8c8e8d394b
+SHA1: 2bc39b0f3f4de4b1573582652a649d03d78f5946
+SHA256: 1c43a68ea70339aaf895e4edd090a1ab15c32b09398d8c9561a753c1f1f23f38
 Section: non-free/libs
 Priority: optional
 Multi-Arch: foreign
@@ -2122,6 +4209,54 @@ Size: 169674
 MD5sum: 86cd067be129caa965831bb4ad19ca15
 SHA1: f564f3e67fe569b018e8af442a6e47ce1162a63b
 SHA256: 0cd215dbb5a6cfbab7365cecd7ac1c39ee53494c61fa5d538d589aade3a179f2
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA EGL installable client driver (ICD)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ Wayland via EGL which supports NVIDIA GPUs.
+
+Package: nvidia-egl-wayland-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-egl-wayland-common, libnvidia-egl-wayland1 (= 381.09-1~svn1)
+Provides: egl-wayland-icd
+Filename: ./nvidia-egl-wayland-icd_381.09-1~svn1_i386.deb
+Size: 171484
+MD5sum: a408fddc74c8757aacd5a4e3b3bf45c9
+SHA1: 893df12756219fac6367a140dbf2ee25cf00cf57
+SHA256: 509bd5789c606482a25217a8291a8b6e35ca291d9491abb146280477b7f5dfec
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA EGL installable client driver (ICD)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ Wayland via EGL which supports NVIDIA GPUs.
+
+Package: nvidia-egl-wayland-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-egl-wayland-common, libnvidia-egl-wayland1 (= 381.09-1~svn1)
+Provides: egl-wayland-icd
+Filename: ./nvidia-egl-wayland-icd_381.09-1~svn1_amd64.deb
+Size: 171484
+MD5sum: 2dd0982cf5f0234b96faadeaf0163168
+SHA1: 59b4fc5dc088101e4b461e6654b4b0927dbc1a5c
+SHA256: 88f80673729bec77d3a432b4d2ce76486c946784a1aaa8269739fe41fdde1daf
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -2211,6 +4346,124 @@ Description: NVIDIA binary kernel module DKMS source
  .
  Building the kernel module has been tested up to Linux 4.9.
 
+Package: nvidia-kernel-dkms
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 22410
+Pre-Depends: nvidia-installer-cleanup
+Depends: dkms (>= 2.1.0.0), nvidia-kernel-support--v1
+Recommends: nvidia-driver (>= 381.09) | libcuda1 (>= 381.09)
+Provides: nvidia-kernel-381.09
+Filename: ./nvidia-kernel-dkms_381.09-1~svn1_amd64.deb
+Size: 6763030
+MD5sum: 0b700cddda5fca9920898ca9260a385e
+SHA1: d5e9353803f7ac1ade67e356cc7797a548ff0fb6
+SHA256: 04f4aac28228cd124b8c2529cb996f3555568a4d1ab4756d829faacf20035ce8
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module DKMS source
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
+Package: nvidia-kernel-dkms
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 15282
+Pre-Depends: nvidia-installer-cleanup
+Depends: dkms (>= 2.1.0.0), nvidia-kernel-support--v1
+Recommends: nvidia-driver (>= 381.09) | libcuda1 (>= 381.09)
+Provides: nvidia-kernel-381.09
+Filename: ./nvidia-kernel-dkms_381.09-1~svn1_i386.deb
+Size: 6278936
+MD5sum: 9f46c0d3f8e6bc5d6113cfa21139a836
+SHA1: 53bb02f4b02d66883d0ac41bb08dbd7d28dfd190
+SHA256: c3eb35c7aea17eae15435fb5c1a57ee250415383e4cfebda4fdca2f365d93e1a
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module DKMS source
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
+Package: nvidia-kernel-source
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 6600
+Depends: debhelper (>= 9), make:any, quilt, xz-utils
+Recommends: module-assistant | kernel-package, nvidia-kernel-support
+Suggests: nvidia-driver (>= 378.13)
+Breaks: module-assistant (<< 0.11.6~)
+Filename: ./nvidia-kernel-source_378.13-1~svn1_amd64.deb
+Size: 6739036
+MD5sum: ff89f600340dbed449fc13132303217e
+SHA1: f55cc5506b1d97ebc79af51784b353222876db5b
+SHA256: da7edf08ea5ff87176caa889ee42371f4c2bb1a534ffc2e6520d985c885756ec
+Section: non-free/kernel
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module source
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ PLEASE read /usr/share/doc/nvidia-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-kernel-dkms instead.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
 Package: nvidia-kernel-source
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2253,19 +4506,59 @@ Description: NVIDIA binary kernel module source
 
 Package: nvidia-kernel-source
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 6600
+Installed-Size: 6214
 Depends: debhelper (>= 9), make:any, quilt, xz-utils
 Recommends: module-assistant | kernel-package, nvidia-kernel-support
-Suggests: nvidia-driver (>= 378.13)
+Suggests: nvidia-driver (>= 381.09)
 Breaks: module-assistant (<< 0.11.6~)
-Filename: ./nvidia-kernel-source_378.13-1~svn1_amd64.deb
-Size: 6739036
-MD5sum: ff89f600340dbed449fc13132303217e
-SHA1: f55cc5506b1d97ebc79af51784b353222876db5b
-SHA256: da7edf08ea5ff87176caa889ee42371f4c2bb1a534ffc2e6520d985c885756ec
+Filename: ./nvidia-kernel-source_381.09-1~svn1_i386.deb
+Size: 6344206
+MD5sum: c0af14026cb8cd027bd52340aecb4bf3
+SHA1: 89dc8e23e2f06267c845cebc699cbc7ba860604c
+SHA256: b2a2927c32e4c3fc8f3a72d5b3f8c6e38318747cc16315d85596aed3cd69e225
+Section: non-free/kernel
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module source
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ PLEASE read /usr/share/doc/nvidia-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-kernel-dkms instead.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.9.
+
+Package: nvidia-kernel-source
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 6674
+Depends: debhelper (>= 9), make:any, quilt, xz-utils
+Recommends: module-assistant | kernel-package, nvidia-kernel-support
+Suggests: nvidia-driver (>= 381.09)
+Breaks: module-assistant (<< 0.11.6~)
+Filename: ./nvidia-kernel-source_381.09-1~svn1_amd64.deb
+Size: 6815134
+MD5sum: 11bd6120186f27689aef74f6332e6bfd
+SHA1: 7ae9da18f1b1a90ac14ac037872373c8be6d0c3a
+SHA256: 95382b22578b8ffde63307be7578feb9b3110b9a987ae58e90ab453cb7e5949c
 Section: non-free/kernel
 Priority: optional
 Homepage: http://www.nvidia.com
@@ -2343,6 +4636,81 @@ Description: NVIDIA binary kernel module support files
  .
  This package provides supporting configuration for the kernel module.
 
+Package: nvidia-kernel-support
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 192
+Depends: nvidia-alternative (= 381.09-1~svn1), nvidia-alternative--kmod-alias, nvidia-kernel-common (>= 20151021), nvidia-modprobe (>= 352)
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: nvidia-kernel-support--v1, nvidia-kernel-support-any
+Filename: ./nvidia-kernel-support_381.09-1~svn1_amd64.deb
+Size: 172172
+MD5sum: 4a968c7c420bf10b4343b9add640b0ed
+SHA1: a12d8d80e510653f1762d191dc93e5065beb57c9
+SHA256: 427a3821175e9c7912b69f208583d741663beb11fd2b3d97a55ef212669be679
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module support files
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package provides supporting configuration for the kernel module.
+
+Package: nvidia-kernel-support
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 192
+Depends: nvidia-alternative (= 381.09-1~svn1), nvidia-alternative--kmod-alias, nvidia-kernel-common (>= 20151021), nvidia-modprobe (>= 352)
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: nvidia-kernel-support--v1, nvidia-kernel-support-any
+Filename: ./nvidia-kernel-support_381.09-1~svn1_i386.deb
+Size: 172184
+MD5sum: 9a10b5485047cd17667a552a9b33b598
+SHA1: 42368c2aceed1aab2e1b4a014aac6206e0425dfb
+SHA256: f6caeaaa1a16fabe388cd6dc8cb400d75b5f0dde6ae71a1f46257790c51f8e18
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary kernel module support files
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package provides supporting configuration for the kernel module.
+
+Package: nvidia-legacy-check
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 198
+Pre-Depends: debconf (>= 0.5) | debconf-2.0, pciutils, nvidia-installer-cleanup
+Filename: ./nvidia-legacy-check_378.13-1~svn1_amd64.deb
+Size: 174158
+MD5sum: 73a78b639326732259835d8cf57f320c
+SHA1: cc4f38f3f22d10edd1a4bcd72b40cd116fdcaa98
+SHA256: 09e61d3ce8dfb86d4a4fd96333d545345b5e165092f3d8a4953f375b34746a2e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: check for NVIDIA GPUs requiring a legacy driver
+ This package checks whether the system contains NVIDIA GPUs that are no longer
+ supported by the main driver line and require a legacy driver.
+ .
+ If such hardware is present, a (preseedable) debconf question will be asked to
+ confirm the installation of the current driver line.
+
 Package: nvidia-legacy-check
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2368,16 +4736,16 @@ Description: check for NVIDIA GPUs requiring a legacy driver
 
 Package: nvidia-legacy-check
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 198
+Installed-Size: 200
 Pre-Depends: debconf (>= 0.5) | debconf-2.0, pciutils, nvidia-installer-cleanup
-Filename: ./nvidia-legacy-check_378.13-1~svn1_amd64.deb
-Size: 174158
-MD5sum: 73a78b639326732259835d8cf57f320c
-SHA1: cc4f38f3f22d10edd1a4bcd72b40cd116fdcaa98
-SHA256: 09e61d3ce8dfb86d4a4fd96333d545345b5e165092f3d8a4953f375b34746a2e
+Filename: ./nvidia-legacy-check_381.09-1~svn1_i386.deb
+Size: 175880
+MD5sum: 7fdc56b161369a17f3f83e68bc278728
+SHA1: 93b142299fd276d80184f3d5481a1d23ce4a19b9
+SHA256: bd304ac924db3fb4dbd0826dcb69f4a04b58ff5242ea8a2248a7400f8849e0e1
 Section: non-free/libs
 Priority: optional
 Multi-Arch: foreign
@@ -2388,6 +4756,63 @@ Description: check for NVIDIA GPUs requiring a legacy driver
  .
  If such hardware is present, a (preseedable) debconf question will be asked to
  confirm the installation of the current driver line.
+
+Package: nvidia-legacy-check
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 200
+Pre-Depends: debconf (>= 0.5) | debconf-2.0, pciutils, nvidia-installer-cleanup
+Filename: ./nvidia-legacy-check_381.09-1~svn1_amd64.deb
+Size: 175880
+MD5sum: 8cd14df829eff535956260c26bf7e61a
+SHA1: 5fc4770cf86a95633d9bb0981a10f4732e4f2f9e
+SHA256: 4eaac22b02b2c8991d22476af6dcf57f339bacb326f50462705036cfb4202933
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: check for NVIDIA GPUs requiring a legacy driver
+ This package checks whether the system contains NVIDIA GPUs that are no longer
+ supported by the main driver line and require a legacy driver.
+ .
+ If such hardware is present, a (preseedable) debconf question will be asked to
+ confirm the installation of the current driver line.
+
+Package: nvidia-libopencl1
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 225
+Depends: libc6 (>= 2.1.3)
+Recommends: nvidia-opencl-icd | opencl-icd
+Conflicts: libopencl1
+Breaks: nvidia-opencl-dev (<= 5.0.35-6)
+Replaces: libopencl1
+Provides: libopencl-1.1-1, libopencl-1.2-1, libopencl1
+Filename: ./nvidia-libopencl1_378.13-1~svn1_i386.deb
+Size: 179548
+MD5sum: 2f4c05aab4a9bd16b8109d66f192c9c2
+SHA1: 6d7aea8538d3a1b6ff0098bfa656263ba3d85d0f
+SHA256: b92a490e5c32811ab81d131269d897d57385b8dfdf3358a2cb138183e542052f
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ The OpenCL installable client driver loader (ICD Loader) acts as a dispatcher
+ between an OpenCL application and one (or more) installable client drivers
+ (ICD) that can be from any vendor. At least one ICD (and the corresponding
+ hardware) is required to run OpenCL applications.
+ .
+ This package contains the ICD Loader library provided by NVIDIA. This library
+ supports OpenCL 1.x only.
 
 Package: nvidia-libopencl1
 Source: nvidia-graphics-drivers
@@ -2425,21 +4850,55 @@ Description: NVIDIA OpenCL ICD Loader library
 
 Package: nvidia-libopencl1
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 223
+Depends: libc6 (>= 2.2.5)
+Recommends: nvidia-opencl-icd | opencl-icd
+Conflicts: libopencl1
+Breaks: nvidia-opencl-dev (<= 5.0.35-6)
+Replaces: libopencl1
+Provides: libopencl-1.1-1, libopencl-1.2-1, libopencl1
+Filename: ./nvidia-libopencl1_381.09-1~svn1_amd64.deb
+Size: 180208
+MD5sum: d2bdea1112b026e68d89e2be16baaf8e
+SHA1: f9cecc60e6cd8ebeb4765dc4f0c9391d52871048
+SHA256: 8d5931b43807d6ce40199dde42126afe3745ca4bec1520e0c6b7725d7dce1194
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ The OpenCL installable client driver loader (ICD Loader) acts as a dispatcher
+ between an OpenCL application and one (or more) installable client drivers
+ (ICD) that can be from any vendor. At least one ICD (and the corresponding
+ hardware) is required to run OpenCL applications.
+ .
+ This package contains the ICD Loader library provided by NVIDIA. This library
+ supports OpenCL 1.x only.
+
+Package: nvidia-libopencl1
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
 Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 225
+Installed-Size: 227
 Depends: libc6 (>= 2.1.3)
 Recommends: nvidia-opencl-icd | opencl-icd
 Conflicts: libopencl1
 Breaks: nvidia-opencl-dev (<= 5.0.35-6)
 Replaces: libopencl1
 Provides: libopencl-1.1-1, libopencl-1.2-1, libopencl1
-Filename: ./nvidia-libopencl1_378.13-1~svn1_i386.deb
-Size: 179548
-MD5sum: 2f4c05aab4a9bd16b8109d66f192c9c2
-SHA1: 6d7aea8538d3a1b6ff0098bfa656263ba3d85d0f
-SHA256: b92a490e5c32811ab81d131269d897d57385b8dfdf3358a2cb138183e542052f
+Filename: ./nvidia-libopencl1_381.09-1~svn1_i386.deb
+Size: 181288
+MD5sum: 400f4acd3d0757454c38e9e44af3679d
+SHA1: 24b6013b13130a6c7bea61904113b013ca4209ac
+SHA256: f8eeb6acd9197b8052e7544a8057eeb60f465318c2619c87df61a2df09fe33c5
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -2505,6 +4964,54 @@ Description: NVIDIA OpenCL driver - common files
  This package provides the common files for the NVIDIA installable client
  driver (ICD) for OpenCL.
 
+Package: nvidia-opencl-common
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 189
+Recommends: nvidia-opencl-icd
+Filename: ./nvidia-opencl-common_381.09-1~svn1_amd64.deb
+Size: 171564
+MD5sum: a5f7ef75f743877937f54f3395ba9fae
+SHA1: 62cc2b9fe0f12e80ee6396803881f17aab3dac9a
+SHA256: e8659214ef07be38f44b621a5a17d46089a9e8113b7cc8944fe7c820c182ac69
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL driver - common files
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for OpenCL.
+
+Package: nvidia-opencl-common
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 189
+Recommends: nvidia-opencl-icd
+Filename: ./nvidia-opencl-common_381.09-1~svn1_i386.deb
+Size: 171564
+MD5sum: c3c0b427db9108c63a5b8281a1c993b4
+SHA1: db0f13b14fa8f5beb39238a5103609883004aac4
+SHA256: 8f35e98470f5e7f4cc46bf4ef00ae90943e3ead5e52342066229afc85224609d
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL driver - common files
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for OpenCL.
+
 Package: nvidia-opencl-icd
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2557,6 +5064,58 @@ Description: NVIDIA OpenCL installable client driver (ICD)
  This package provides the NVIDIA installable client driver (ICD) for OpenCL
  which supports NVIDIA GPUs.
 
+Package: nvidia-opencl-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 8316
+Depends: nvidia-opencl-common, ocl-icd-libopencl1 | nvidia-libopencl1 | libopencl1, nvidia-alternative (= 381.09-1~svn1), libcuda1 (= 381.09-1~svn1), libnvidia-compiler (= 381.09-1~svn1), libc6 (>= 2.2.5), libnvidia-fatbinaryloader (>= 367.44)
+Enhances: libopencl1
+Provides: opencl-icd
+Filename: ./nvidia-opencl-icd_381.09-1~svn1_amd64.deb
+Size: 1643768
+MD5sum: 0b2d01c62add79935451a2f6331c7673
+SHA1: 957f56e543d350d9658f2ec57945dad982338aa4
+SHA256: d004f39ef644b58af2c3addaf93db59174cdd70b31845181b7787942819e6f65
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL installable client driver (ICD)
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the NVIDIA installable client driver (ICD) for OpenCL
+ which supports NVIDIA GPUs.
+
+Package: nvidia-opencl-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 7905
+Depends: nvidia-opencl-common, ocl-icd-libopencl1 | nvidia-libopencl1 | libopencl1, nvidia-alternative (= 381.09-1~svn1), libcuda1 (= 381.09-1~svn1), libnvidia-compiler (= 381.09-1~svn1), libc6 (>= 2.3.6-6~), libnvidia-fatbinaryloader (>= 367.44)
+Enhances: libopencl1
+Provides: opencl-icd
+Filename: ./nvidia-opencl-icd_381.09-1~svn1_i386.deb
+Size: 1627466
+MD5sum: 3be621debc28f3fc84e34999fe68ce8b
+SHA1: 36e31e2bc1086d74d1e60278904d691da7602305
+SHA256: bbfc2567a3f3578a9ec251f622c3fff8c581452d78d2410a7464bf26e4a996b4
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenCL installable client driver (ICD)
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the NVIDIA installable client driver (ICD) for OpenCL
+ which supports NVIDIA GPUs.
+
 Package: nvidia-smi
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2596,6 +5155,56 @@ Size: 337808
 MD5sum: ed6680a5f7a47481c27ea6102780af98
 SHA1: 9210d9cca9b561c6803b02331b7f468312ebc8e6
 SHA256: be34afc1f61310ac505af8860850474a24f3790b1d4e5352271dfe7edd66f4ff
+Section: non-free/utils
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA System Management Interface
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ The application "nvidia-smi" is the NVIDIA System Management Interface (NVSMI)
+ and provides a command line interface to this functionality.
+ .
+ See the output from the --help command line option for supported models and
+ further information.
+
+Package: nvidia-smi
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 691
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-ml1 (= 381.09-1~svn1), libc6 (>= 2.2.5)
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Filename: ./nvidia-smi_381.09-1~svn1_amd64.deb
+Size: 347142
+MD5sum: a20c8d1fa97bd7a46c8854d2cbbedd02
+SHA1: 42995f77feaef0291eae8c1cfead323b8d4f8b1d
+SHA256: efd5382f720f931b17da409da93fb3c37787969f72d1f68e322d1337f13d9440
+Section: non-free/utils
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA System Management Interface
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ The application "nvidia-smi" is the NVIDIA System Management Interface (NVSMI)
+ and provides a command line interface to this functionality.
+ .
+ See the output from the --help command line option for supported models and
+ further information.
+
+Package: nvidia-smi
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 663
+Depends: nvidia-alternative (= 381.09-1~svn1), libnvidia-ml1 (= 381.09-1~svn1), libc6 (>= 2.3.6-6~)
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Filename: ./nvidia-smi_381.09-1~svn1_i386.deb
+Size: 341468
+MD5sum: 763b370190527a775348074bd114bfb5
+SHA1: fb6384e8472ff4f233388457b9e05b9c84ce0607
+SHA256: 28cd9afb1c529b5624789f48e4f71f1380c067ec38350804a2feeff53123bdc9
 Section: non-free/utils
 Priority: optional
 Homepage: http://www.nvidia.com
@@ -2679,6 +5288,100 @@ Description: Video Decode and Presentation API for Unix - NVIDIA driver
  for building the kernel module required by this package.
  This will provide nvidia-kernel-378.13.
 
+Package: nvidia-vdpau-driver
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1146
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: libvdpau1 (>= 0.9), nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.1), libx11-6, libxext6
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Enhances: libvdpau1
+Provides: vdpau-driver
+Filename: ./nvidia-vdpau-driver_381.09-1~svn1_i386.deb
+Size: 733660
+MD5sum: 87c7a4bbf3fdfa3c68812fbc6b72f385
+SHA1: c7f6435e2fa68c2f0e755501144d6578d377e45a
+SHA256: 7f126f9ecafac64e07902342ac0a501bb3578316781b97255d35861ff5f76edb
+Section: non-free/video
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Video Decode and Presentation API for Unix - NVIDIA driver
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) for the supported
+ graphics cards.
+ .
+ This package contains the NVIDIA VDPAU driver.
+ .
+ See /usr/share/doc/nvidia-vdpau-driver/README.txt.gz
+ for more information.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+
+Package: nvidia-vdpau-driver
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1083
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: libvdpau1 (>= 0.9), nvidia-alternative (= 381.09-1~svn1), libc6 (>= 2.2.5), libx11-6, libxext6
+Recommends: nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Enhances: libvdpau1
+Provides: vdpau-driver
+Filename: ./nvidia-vdpau-driver_381.09-1~svn1_amd64.deb
+Size: 722318
+MD5sum: 9726a87ca226dfca6270afd0db4b4dcd
+SHA1: ad96cc6780e07ab6142988a0dac0c773d6d2a591
+SHA256: 566c079fd99c2dce87b6eaad11f90c474e83151fd60c13aea1f35f190411684b
+Section: non-free/video
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: Video Decode and Presentation API for Unix - NVIDIA driver
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) for the supported
+ graphics cards.
+ .
+ This package contains the NVIDIA VDPAU driver.
+ .
+ See /usr/share/doc/nvidia-vdpau-driver/README.txt.gz
+ for more information.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
+
+Package: nvidia-vulkan-common
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 188
+Recommends: nvidia-vulkan-icd
+Filename: ./nvidia-vulkan-common_378.13-1~svn1_amd64.deb
+Size: 170146
+MD5sum: 4804ba91c0a4bdda29e43c3159cedfab
+SHA1: 931690f6564781f7871da468003321f93879e90e
+SHA256: 7069c03ff20a00603a9a0ba4dec727c5333893f8e9a4766eac76dd95f869d350
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA Vulkan driver - common files
+ Vulkan is a multivendor open standard by the Khronos Group for 3D graphics.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for Vulkan.
+
 Package: nvidia-vulkan-common
 Source: nvidia-graphics-drivers
 Version: 378.13-1~svn1
@@ -2703,16 +5406,16 @@ Description: NVIDIA Vulkan driver - common files
 
 Package: nvidia-vulkan-common
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
+Version: 381.09-1~svn1
 Architecture: amd64
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 188
+Installed-Size: 190
 Recommends: nvidia-vulkan-icd
-Filename: ./nvidia-vulkan-common_378.13-1~svn1_amd64.deb
-Size: 170146
-MD5sum: 4804ba91c0a4bdda29e43c3159cedfab
-SHA1: 931690f6564781f7871da468003321f93879e90e
-SHA256: 7069c03ff20a00603a9a0ba4dec727c5333893f8e9a4766eac76dd95f869d350
+Filename: ./nvidia-vulkan-common_381.09-1~svn1_amd64.deb
+Size: 171872
+MD5sum: e0af6153681fbfdf45aff07314dd0811
+SHA1: e868bd967333311407587a806ed23fee5e6b602f
+SHA256: 9fc1f0f519349dfccbcb917a666d739ed4b4b2d18d2d093bae5966b0ca0a59c4
 Section: non-free/libs
 Priority: optional
 Multi-Arch: foreign
@@ -2722,6 +5425,53 @@ Description: NVIDIA Vulkan driver - common files
  .
  This package provides the common files for the NVIDIA installable client
  driver (ICD) for Vulkan.
+
+Package: nvidia-vulkan-common
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: i386
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 190
+Recommends: nvidia-vulkan-icd
+Filename: ./nvidia-vulkan-common_381.09-1~svn1_i386.deb
+Size: 171874
+MD5sum: 75bd1719cdab6c175722972c6a171be0
+SHA1: 9a4e95bbf48ebc5b4511186568e0fcfd53a3d69f
+SHA256: 797eeb19895c340989e66bbea29e84ca9df8ab58db625d182c14a53e205002af
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.nvidia.com
+Description: NVIDIA Vulkan driver - common files
+ Vulkan is a multivendor open standard by the Khronos Group for 3D graphics.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for Vulkan.
+
+Package: nvidia-vulkan-icd
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 182
+Depends: nvidia-vulkan-common, libvulkan1, libglx-nvidia0 (= 378.13-1~svn1)
+Suggests: vulkan-utils
+Enhances: libvulkan1
+Provides: vulkan-icd
+Filename: ./nvidia-vulkan-icd_378.13-1~svn1_amd64.deb
+Size: 169696
+MD5sum: 62f3f03934c964570ded804f2c6a6ef6
+SHA1: d580855169fcc1ff16539a13536b3fb81d8af930
+SHA256: a0093964df20a6d50d8b523ce18020007603bb57fa80978e136237c0b79c3427
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA Vulkan installable client driver (ICD)
+ Vulkan is a multivendor open standard by the Khronos Group for 3D graphics.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ Vulkan which supports NVIDIA GPUs.
 
 Package: nvidia-vulkan-icd
 Source: nvidia-graphics-drivers
@@ -2750,19 +5500,19 @@ Description: NVIDIA Vulkan installable client driver (ICD)
 
 Package: nvidia-vulkan-icd
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 182
-Depends: nvidia-vulkan-common, libvulkan1, libglx-nvidia0 (= 378.13-1~svn1)
+Installed-Size: 184
+Depends: nvidia-vulkan-common, libvulkan1, libglx-nvidia0 (= 381.09-1~svn1)
 Suggests: vulkan-utils
 Enhances: libvulkan1
 Provides: vulkan-icd
-Filename: ./nvidia-vulkan-icd_378.13-1~svn1_amd64.deb
-Size: 169696
-MD5sum: 62f3f03934c964570ded804f2c6a6ef6
-SHA1: d580855169fcc1ff16539a13536b3fb81d8af930
-SHA256: a0093964df20a6d50d8b523ce18020007603bb57fa80978e136237c0b79c3427
+Filename: ./nvidia-vulkan-icd_381.09-1~svn1_i386.deb
+Size: 171442
+MD5sum: 56dc6de9fdff95a44586a9aeabf2027e
+SHA1: f5b2ef4ddf237a029924425362386e8f08791ea9
+SHA256: cc92439a4fef3aff754735cd5f9d0e4a7f3656a89ce92cd7810ed95f294e9ce2
 Section: non-free/libs
 Priority: optional
 Multi-Arch: same
@@ -2772,6 +5522,69 @@ Description: NVIDIA Vulkan installable client driver (ICD)
  .
  This metapackage provides the NVIDIA installable client driver (ICD) for
  Vulkan which supports NVIDIA GPUs.
+
+Package: nvidia-vulkan-icd
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 184
+Depends: nvidia-vulkan-common, libvulkan1, libglx-nvidia0 (= 381.09-1~svn1)
+Suggests: vulkan-utils
+Enhances: libvulkan1
+Provides: vulkan-icd
+Filename: ./nvidia-vulkan-icd_381.09-1~svn1_amd64.deb
+Size: 171446
+MD5sum: fc105bf595030b49b880d4947e56c227
+SHA1: 00c6ff97585cbf3ab1a656e86e60f61c531e32c5
+SHA256: a74a6c573002f65f979d2373e9d18ddf30c06e1d3ec3027f237cac2860ab9687
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nvidia.com
+Description: NVIDIA Vulkan installable client driver (ICD)
+ Vulkan is a multivendor open standard by the Khronos Group for 3D graphics.
+ .
+ This metapackage provides the NVIDIA installable client driver (ICD) for
+ Vulkan which supports NVIDIA GPUs.
+
+Package: xserver-xorg-video-nvidia
+Source: nvidia-graphics-drivers
+Version: 378.13-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 21270
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: libnvidia-glcore (= 378.13-1~svn1), nvidia-alternative (= 378.13-1~svn1), nvidia-support (>= 20120630), xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (<< 2:1.19.99), libc6 (>= 2.2.5)
+Recommends: nvidia-driver (>= 378.13), nvidia-vdpau-driver (>= 378.13), nvidia-kernel-dkms (= 378.13-1~svn1) | nvidia-kernel-378.13, nvidia-settings (>= 378)
+Suggests: nvidia-kernel-dkms (>= 378.13) | nvidia-kernel-source (>= 378.13)
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: xorg-driver-video, xserver-xorg-video-nvidia-any
+Filename: ./xserver-xorg-video-nvidia_378.13-1~svn1_amd64.deb
+Size: 3149198
+MD5sum: 948514de7617b557615506275f7dcc95
+SHA1: da5966a8699cbca1adb8405ccaae12f6ea5774ad
+SHA256: 336365e3f34bf6fb399a507e4c4c1d002eacdea42fc9a12edb550c4cd0b56066
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary Xorg driver
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-378.13.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
 
 Package: xserver-xorg-video-nvidia
 Source: nvidia-graphics-drivers
@@ -2813,22 +5626,22 @@ Description: NVIDIA binary Xorg driver
 
 Package: xserver-xorg-video-nvidia
 Source: nvidia-graphics-drivers
-Version: 378.13-1~svn1
-Architecture: amd64
+Version: 381.09-1~svn1
+Architecture: i386
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Installed-Size: 21270
+Installed-Size: 16842
 Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
-Depends: libnvidia-glcore (= 378.13-1~svn1), nvidia-alternative (= 378.13-1~svn1), nvidia-support (>= 20120630), xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (<< 2:1.19.99), libc6 (>= 2.2.5)
-Recommends: nvidia-driver (>= 378.13), nvidia-vdpau-driver (>= 378.13), nvidia-kernel-dkms (= 378.13-1~svn1) | nvidia-kernel-378.13, nvidia-settings (>= 378)
-Suggests: nvidia-kernel-dkms (>= 378.13) | nvidia-kernel-source (>= 378.13)
+Depends: libnvidia-glcore (= 381.09-1~svn1), nvidia-alternative (= 381.09-1~svn1), nvidia-support (>= 20120630), xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (<< 2:1.19.99), libc6 (>= 2.1.3)
+Recommends: nvidia-driver (>= 381.09), nvidia-vdpau-driver (>= 381.09), nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-settings (>= 381)
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
 Breaks: glx-alternative-nvidia (<< 0.6.91)
 Replaces: glx-alternative-nvidia (<< 0.6.91)
 Provides: xorg-driver-video, xserver-xorg-video-nvidia-any
-Filename: ./xserver-xorg-video-nvidia_378.13-1~svn1_amd64.deb
-Size: 3149198
-MD5sum: 948514de7617b557615506275f7dcc95
-SHA1: da5966a8699cbca1adb8405ccaae12f6ea5774ad
-SHA256: 336365e3f34bf6fb399a507e4c4c1d002eacdea42fc9a12edb550c4cd0b56066
+Filename: ./xserver-xorg-video-nvidia_381.09-1~svn1_i386.deb
+Size: 2927344
+MD5sum: a88d8187af11d561858cd79a1616c5e9
+SHA1: 166f39f7e11f609b211281959fb14990639fbb4e
+SHA256: 2473db98e9c76ce955136c09b3f593fbd82e50090cfbe7133edb5912624b6625
 Section: non-free/x11
 Priority: optional
 Homepage: http://www.nvidia.com
@@ -2840,7 +5653,45 @@ Description: NVIDIA binary Xorg driver
  Please see the nvidia-kernel-dkms or
  nvidia-kernel-source packages
  for building the kernel module required by this package.
- This will provide nvidia-kernel-378.13.
+ This will provide nvidia-kernel-381.09.
+ .
+ This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
+ Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: xserver-xorg-video-nvidia
+Source: nvidia-graphics-drivers
+Version: 381.09-1~svn1
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 21149
+Pre-Depends: nvidia-installer-cleanup, nvidia-legacy-check (>= 343)
+Depends: libnvidia-glcore (= 381.09-1~svn1), nvidia-alternative (= 381.09-1~svn1), nvidia-support (>= 20120630), xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (<< 2:1.19.99), libc6 (>= 2.2.5)
+Recommends: nvidia-driver (>= 381.09), nvidia-vdpau-driver (>= 381.09), nvidia-kernel-dkms (= 381.09-1~svn1) | nvidia-kernel-381.09, nvidia-settings (>= 381)
+Suggests: nvidia-kernel-dkms (>= 381.09) | nvidia-kernel-source (>= 381.09)
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: xorg-driver-video, xserver-xorg-video-nvidia-any
+Filename: ./xserver-xorg-video-nvidia_381.09-1~svn1_amd64.deb
+Size: 3011670
+MD5sum: 542c6db8101582a2fdb484e21dc26362
+SHA1: 84c454be211d05fe450e3607b6e76adf73c8233b
+SHA256: d0d35ccd92a1db7d8b2a96ebbe1f038a60ece6a66036f365071d3590afb866ad
+Section: non-free/x11
+Priority: optional
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary Xorg driver
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-381.09.
  .
  This version only supports GeForce, Quadro, NVS, Tesla, ... GPUs based on the
  Fermi, Kepler, Maxwell, or newer architectures.  Look at the legacy packages
